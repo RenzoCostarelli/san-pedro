@@ -1,0 +1,64 @@
+import { WineShowcaseProps } from "@/types/wines";
+import altairLogo from "@/public/images/wines/altair_logo.png";
+import altairBottle from "@/public/images/wines/altair_bottle.png";
+import caboLogo from "@/public/images/wines/cabo_logo.png";
+import caboBottle from "@/public/images/wines/cabo_bottle.png";
+import sideralLogo from "@/public/images/wines/sideral_logo.png";
+import sideralBottle from "@/public/images/wines/sideral_bottle.png";
+import slide1 from "@/public/images/climate-header.jpg";
+
+export const winesList: WineShowcaseProps[] = [
+  {
+    wineName: "Altair",
+    region: "Cachapoal Andes",
+    tagline: "The brighter star of the andes",
+    description:
+      "The strength of the Andes Mountain Range is embodied in our iconic wine blend, which stands out for its unparalleled quality and elegance. Altair is the brightest star in our fine wine portfolio, a blend that reflects the finest grapes of the vintage, selected from the varieties and vineyard polygons that really shone in that year.",
+    disclaimer:
+      "Production is limited and varies according to the year's weather conditions.",
+    wineBottleImage: altairBottle,
+    wineLogoImage: altairLogo,
+    sliderImages: [slide1, slide1, slide1],
+    sliderTabs: [
+      { label: "FINE COLUVIAL", value: "finecoluvial" },
+      { label: "Alluvial", value: "alluvial" },
+      { label: "Colluvial", value: "colluvial" },
+    ],
+    defaultTab: "finecoluvial",
+  },
+  {
+    wineName: "Cabo de Hornos",
+    region: "The pure expression of Cachapoal Andes",
+    tagline: "The pure expression of Cachapoal Andes",
+    description:
+      "The strength of the Andes Mountain Range is embodied in our iconic wine blend, which stands out for its unparalleled quality and elegance. Altair is the brightest star in our fine wine portfolio, a blend that reflects the finest grapes of the vintage, selected from the varieties and vineyard polygons that really shone in that year.",
+    disclaimer: "Limited production.",
+    wineBottleImage: caboBottle,
+    wineLogoImage: caboLogo,
+    sliderImages: [slide1, slide1, slide1],
+    sliderTabs: [
+      { label: "FINE COLUVIAL", value: "finecoluvial" },
+      { label: "Alluvial", value: "alluvial" },
+      { label: "Colluvial", value: "colluvial" },
+    ],
+    defaultTab: "finecoluvial",
+  },
+  {
+    wineName: "Sideral",
+    region: "A constellation of exceptional taste",
+    tagline: "A constellation of exceptional taste",
+    description:
+      "Sideral is a blend in which the five estate varieties come together in harmony to faithfully represent the rich terroir diversity of the Cachapoal Andes Valley. In this wine, the winemaker aims to bring out the natural conditions endowed by the vineyard’s location in the Andean foothills",
+    disclaimer:
+      "Blend: Cabernet Sauvignon | Cabernet Franc Carmenère | Syrah | Petit Verdot",
+    wineBottleImage: sideralBottle,
+    wineLogoImage: sideralLogo,
+    sliderImages: [slide1, slide1, slide1],
+    sliderTabs: [
+      { label: "FINE COLUVIAL", value: "finecoluvial" },
+      { label: "Alluvial", value: "alluvial" },
+      { label: "Colluvial", value: "colluvial" },
+    ],
+    defaultTab: "finecoluvial",
+  },
+];
