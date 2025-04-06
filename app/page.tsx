@@ -1,5 +1,4 @@
 import BorderedParagraph from "@/components/bordered-paragraph";
-import Hero from "@/components/hero";
 import TitleSection from "@/components/title-section";
 import UniqueArea from "@/components/unique-area";
 import heroImg from "@/public/images/hero-home.png";
@@ -8,16 +7,38 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Hero image={heroImg}>
-        <div className="flex flex-col items-center z-50 relative">
-          <Image src="/images/logo-home.png" alt="" width={300} height={100} />
+      <div className="h-screen w-full relative">
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute w-full h-full object-cover"
+          style={{ zIndex: -1 }}
+        >
+          <source
+            src="https://res.cloudinary.com/dkgnaegp9/video/upload/v1743952880/heroVideo_tdyh4h.webm"
+            type="video/webm"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+          <Image
+            src="/images/logo-home.png"
+            alt=""
+            width={300}
+            height={100}
+            unoptimized
+            className="z-10"
+          />
           <p>
             An exceptional terroir, at the foothills of the Andes,
             <br />
             shaped by millions of years of earthquakes and volcanic activity.
           </p>
         </div>
-      </Hero>
+      </div>
+
       <section className="bg-blue-dark py-15 md:px-0 px-5">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 place-items-center gap-5">
@@ -26,7 +47,7 @@ export default function Home() {
               PRIVILEGED SOILS AT THE FOOTHILLS OF THE ANDES MOUNTAIN RANGE, 500
               METERS ABOVE SEA LEVEL.
             </BorderedParagraph>
-            <Image src={heroImg} alt="" />
+            <Image src={heroImg} alt="" unoptimized />
           </div>
         </div>
       </section>
@@ -69,6 +90,7 @@ export default function Home() {
           width={1864}
           height={1001}
           className="object-contain w-full h-max"
+          unoptimized
         />
       </section>
     </>

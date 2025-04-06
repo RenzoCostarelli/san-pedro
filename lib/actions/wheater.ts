@@ -13,7 +13,7 @@ export async function getWeatherData(idEstacion: string = "22") {
     `http://52.168.160.35:8080/api/v1/datos/ultimo?idEstacion=${idEstacion}`,
     {
       headers: {
-        "API-KEY": "a4f67494c32938d2abb70621dc8b9b9e",
+        "API-KEY": process.env.API_KEY || "",
       },
       cache: "no-store",
     }

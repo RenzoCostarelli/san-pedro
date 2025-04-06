@@ -33,6 +33,7 @@ export default function WinesSlider({
           width={110}
           height={400}
           className="mb-4"
+          unoptimized
         />
         <div>
           <Image
@@ -41,6 +42,7 @@ export default function WinesSlider({
             width={135.53}
             height={80}
             className="mb-4"
+            unoptimized
           />
           <h3 className="text-gold uppercase mb-2">{wine.tagline}</h3>
           <p className="text-white/90 text-sm mb-4 max-w-xl">
@@ -84,6 +86,7 @@ export default function WinesSlider({
                 width={534}
                 height={400}
                 className="w-[534px] h-[400px] object-cover"
+                unoptimized
               />
             </SwiperSlide>
           ))}

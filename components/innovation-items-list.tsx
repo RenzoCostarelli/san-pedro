@@ -37,6 +37,7 @@ export default function InnovationIitemsList({
             src={innovationItem.image}
             alt={`${innovationItem.title} image`}
             className="max-h-[400px] object-contain"
+            unoptimized
           />
         </div>
       </div>

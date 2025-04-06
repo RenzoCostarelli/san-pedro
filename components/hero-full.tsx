@@ -21,6 +21,7 @@ export default function Hero({ title, image }: HeroProps) {
         alt=""
         fill
         className="object-cover w-full h-full inset-0"
+        unoptimized
       />
       {title && (
         <div className="container mx-auto relative z-50">

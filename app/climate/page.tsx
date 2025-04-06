@@ -2,6 +2,7 @@ import BorderedParagraph from "@/components/bordered-paragraph";
 import Hero from "@/components/hero";
 import RainfallScatter from "@/components/ranfallScatter";
 import TitleSection from "@/components/title-section";
+// import WeatherData from "@/components/weather-data";
 import WinklerChart from "@/components/WinklerChart";
 import { getWeatherData } from "@/lib/actions/wheater";
 import heroImg from "@/public/images/climate-header.jpg";
@@ -9,7 +10,6 @@ import heroImg from "@/public/images/climate-header.jpg";
 
 export default async function ClimatePage() {
   const data = await getWeatherData("22");
-
   return (
     <>
       <Hero image={heroImg}>
@@ -61,6 +61,7 @@ export default async function ClimatePage() {
                   </ul>
                 </div>
               </div>
+              {/* <WeatherData /> */}
             </div>
           </div>
         </div>

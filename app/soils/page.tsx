@@ -57,6 +57,7 @@ export default function SoilsPage() {
                 height={800}
                 className="w-full"
                 alt="Electrical Conductivityyy Mapping Image"
+                unoptimized
               />
             </div>
           </div>
