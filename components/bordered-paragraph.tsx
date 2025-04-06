@@ -18,7 +18,7 @@ export default function BorderedParagraph({
 }: BorderedParagraphProps) {
   return (
     <div
-      className={`border-l-4 p-5 text-gold-light text-2xl font-alegreya-sans ${
+      className={`border-l-4 p-5 text-gold-light md:text-2xl font-alegreya-sans ${
         variant === "light" ? "border-gold" : "border-blue"
       } ${secondaryText || image ? "md:grid-cols-2" : "grid-cols-1"}`}
     >

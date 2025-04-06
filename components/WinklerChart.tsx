@@ -95,7 +95,7 @@ export default function WinklerChart() {
   };
 
   return (
-    <div className=" p-4 rounded-xl w-full max-w-4xl h-[400px]">
+    <div className="p-4 rounded-xl w-full max-w-4xl h-[400px]">
       <Line data={data} options={options} />
     </div>
   );

@@ -9,7 +9,7 @@ interface HeroProps {
 
 export default function Hero({ image, children }: HeroProps) {
   return (
-    <div className="md:h-[95svh] w-full bg-gold relative grid items-center ">
+    <div className="h-screen md:h-[95svh] w-full bg-gold relative grid items-center px-5 md:px-0">
       <Image
         src={image}
         alt=""

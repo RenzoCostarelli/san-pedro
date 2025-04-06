@@ -88,7 +88,7 @@ export default async function ClimatePage() {
       </section>
       <section className="bg-blue py-15 md:px-0 px-5">
         <div className="container mx-auto">
-          <span className="text-gold text-4xl font-light font-alegreya-sans">
+          <span className="text-gold text-xl md:text-4xl font-light font-alegreya-sans">
             Winkler Classification and Cachapoal Andes:
           </span>
           <TitleSection>

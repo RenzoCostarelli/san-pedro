@@ -3,6 +3,8 @@ import { ReactNode } from "react";
 
 export default function TitleSection({ children }: { children: ReactNode }) {
   return (
-    <h2 className="text-gold font-alegreya font-medium text-6xl">{children}</h2>
+    <h2 className="text-gold font-alegreya font-medium text-3xl md:text-6xl">
+      {children}
+    </h2>
   );
 }

@@ -5,7 +5,7 @@ import NavItem from "./nav-item";
 
 export default function Navigation() {
   return (
-    <div className="w-full bg-[#000000b3] z-90 fixed -top-[1px] backdrop-blur-sm">
+    <div className="md:block hidden w-full bg-[#000000b3] z-90 fixed -top-[1px] backdrop-blur-sm">
       <div className="container mx-auto py-5">
         <nav>
           <div className="flex md:flex-row flex-col items-center justify-between">
