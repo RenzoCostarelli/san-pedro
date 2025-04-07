@@ -73,7 +73,7 @@ export default function SoilsPage() {
         </div>
         <div className="w-full md:h-[700px] mt-15">
           <iframe
-            src="https://sanpedro.ciudadesferica.com/calicatas360/?startscene=0"
+            src="https://www.ciudadesferica.com/demo/sanpedrocachapoal/"
             style={{ width: "100%", height: "100%", border: 0 }}
           ></iframe>
         </div>
