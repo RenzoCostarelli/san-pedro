@@ -22,7 +22,7 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 font-alegreya">
           <Image
             src="/images/logo-home.png"
             alt=""
@@ -31,7 +31,7 @@ export default function Home() {
             unoptimized
             className="z-10"
           />
-          <p>
+          <p className="text-xl mt-8">
             An exceptional terroir, at the foothills of the Andes,
             <br />
             shaped by millions of years of earthquakes and volcanic activity.

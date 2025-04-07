@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import NavItem from "./nav-item";
+import Link from "next/link";
 
 export default function Navigation() {
   return (
@@ -12,14 +13,16 @@ export default function Navigation() {
             <NavItem href="/climate" label="CLIMATE" />
             <NavItem href="/soils" label="SOILS" />
             <NavItem href="/blocks" label="BLOCKS" />
-            <Image
-              src={"/images/logo-home.png"}
-              alt="San Pedro logo"
-              width={200}
-              height={40}
-              className="mx-7"
-              unoptimized
-            />
+            <Link href={"/"}>
+              <Image
+                src={"/images/logo-home.png"}
+                alt="San Pedro logo"
+                width={200}
+                height={40}
+                className="mx-7"
+                unoptimized
+              />
+            </Link>
             <NavItem href="/winemaking" label="WINEMAKING" />
             <NavItem href="/wines" label="WINES" />
             <NavItem href="/sustainability" label="SUSTAINABILITY" />
