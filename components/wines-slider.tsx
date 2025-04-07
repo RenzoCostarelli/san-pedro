@@ -24,7 +24,7 @@ export default function WinesSlider({
   };
 
   return (
-    <div className="container mx-auto grid md:grid-cols-12 gap-8 text-white">
+    <div className="container max-w-[1100px] mx-auto grid md:grid-cols-12 gap-8 text-white">
       {/* LEFT: Bottle + Info */}
       <div className="flex items-center gap-4 lg:items-start text-left md:col-span-7">
         <Image

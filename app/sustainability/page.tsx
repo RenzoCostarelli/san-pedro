@@ -36,7 +36,7 @@ export default function SustainabilityPage() {
     <>
       <Hero image={sustainabilityImg}>
         <div className="flex">
-          <div className="container mx-auto relative z-50">
+          <div className="container max-w-[1100px] mx-auto relative z-50">
             <h1 className="font-alegreya text-8xl font-medium text-gold-light">
               Sustainability
             </h1>
@@ -45,7 +45,7 @@ export default function SustainabilityPage() {
         </div>
       </Hero>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <BorderedParagraph>
             Viña San Pedro is committed to sustainable development from a
             holistic perspective, developing strategies that consider every
@@ -56,7 +56,7 @@ export default function SustainabilityPage() {
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5 space-y-10">
-        <div className="container mx-auto ">
+        <div className="container max-w-[1100px] mx-auto ">
           <TitleSection>
             Vineyard <span className="text-white">Management</span>
           </TitleSection>
@@ -90,7 +90,7 @@ export default function SustainabilityPage() {
         </div>
       </section>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <BorderedParagraph variant="dark">
             THIS, TOGETHER WITH OUR CULTURAL WORK ON THE LAND, HAS ALLOWED THE
             VINE TO MAINTAIN A GREAT CIRCULAR BALANCE, NATURALLY ACQUIRING

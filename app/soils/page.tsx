@@ -10,14 +10,14 @@ export default function SoilsPage() {
     <>
       <Hero image={heroImg}>
         <div className="flex">
-          <div className="container mx-auto relative z-50">
+          <div className="container max-w-[1100px] mx-auto relative z-50">
             <h1 className="font-alegreya-sans text-8xl">Soils</h1>
             <div className="h-2 w-8 bg-white"></div>
           </div>
         </div>
       </Hero>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <BorderedParagraph>
             The ideal combination of alluvial and colluvial soils and the
             diversity of basal rocks and cood drainage soils creates perfect
@@ -26,7 +26,7 @@ export default function SoilsPage() {
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5 relative">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <h2 className="text-4xl text-gold font-alegreya-sans font-medium">
             An in-depth understanding of our soils has been a constant concern
             for our team, leading us to conduct several studies over the years.
@@ -66,7 +66,7 @@ export default function SoilsPage() {
       </section>
       <section className="bg-blue-dark py-15 md:px-0 px-5 h-[50vh]"></section>
       <section className="bg-blue pt-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
             <span className="text-white">360º</span> Views
           </TitleSection>

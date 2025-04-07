@@ -16,8 +16,8 @@ export default function Home() {
           style={{ zIndex: -1 }}
         >
           <source
-            src="https://res.cloudinary.com/dkgnaegp9/video/upload/v1743952880/heroVideo_tdyh4h.webm"
-            type="video/webm"
+            src="https://res.cloudinary.com/dkgnaegp9/video/upload/v1744055828/Cachapoal_Andes_V10_cortado_wlylbe.mp4"
+            type="video/mp4"
           />
           Your browser does not support the video tag.
         </video>
@@ -40,7 +40,7 @@ export default function Home() {
       </div>
 
       <section className="bg-blue-dark py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <div className="grid md:grid-cols-2 place-items-center gap-5">
             <BorderedParagraph>
               CACHAPOAL ANDES ESTATE IS LOCATED 110KM SOUTH OF SANTIAGO IN
@@ -52,7 +52,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
             What makes it <span className="text-white">unique?</span>
           </TitleSection>

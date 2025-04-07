@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-blue-dark text-white py-10">
-      <div className="container mx-auto flex items-center justify-center gap-5">
+      <div className="container max-w-[1100px] mx-auto flex items-center justify-center gap-5">
         <Image
           src={"/images/logo-home.png"}
           alt="San Pedro logo"

@@ -122,7 +122,8 @@ const InnovationItems: InnovationItemsProps[] = [
       },
       {
         label: "Highlight:",
-        value: "more oxidative container, shorter aging, around 12 months.",
+        value:
+          "more oxidative container max-w-[1100px], shorter aging, around 12 months.",
       },
       {
         label: "Varieties used for aging: ",
@@ -144,7 +145,8 @@ const InnovationItems: InnovationItemsProps[] = [
       },
       {
         label: "Highlight:",
-        value: "more oxidative container, shorter aging, around 12 months.",
+        value:
+          "more oxidative container max-w-[1100px], shorter aging, around 12 months.",
       },
       {
         label: "Varieties used for aging: ",
@@ -205,14 +207,14 @@ export default function WineMakingPage() {
     <>
       <Hero image={heroImg}>
         <div className="flex">
-          <div className="container mx-auto relative z-50">
+          <div className="container max-w-[1100px] mx-auto relative z-50">
             <h1 className="font-alegreya-sans text-8xl">Winemaking</h1>
             <div className="h-2 w-8 bg-white"></div>
           </div>
         </div>
       </Hero>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <BorderedParagraph variant="dark">
             We employ state-of-the-art technologies to enhance the quality of
             our wine production, while also showing our origins honestly and as
@@ -221,7 +223,7 @@ export default function WineMakingPage() {
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5 relative">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
             Ageing
             <span className="text-white"> Innovation</span>
@@ -233,7 +235,7 @@ export default function WineMakingPage() {
         </div>
       </section>
       <section className="bg-blue-dark py-15 md:px-0 px-5 relative">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <div className="py-10">
             <InnovationIitemsList
               innovationItem={InnovationItems[1]}
@@ -243,14 +245,14 @@ export default function WineMakingPage() {
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5 relative">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <div className="py-10">
             <InnovationIitemsList innovationItem={InnovationItems[2]} />
           </div>
         </div>
       </section>
       <section className="bg-blue-dark py-15 md:px-0 px-5 relative">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <div className="py-10">
             <InnovationIitemsList
               innovationItem={InnovationItems[3]}
@@ -260,7 +262,7 @@ export default function WineMakingPage() {
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5 relative">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-3">
               <InnovationIitemsList
@@ -281,7 +283,7 @@ export default function WineMakingPage() {
         </div>
       </section>
       <section className="bg-blue-dark py-15 md:px-0 px-5 relative">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <div className="py-10">
             <InnovationIitemsList
               innovationItem={InnovationItems[6]}
@@ -291,7 +293,7 @@ export default function WineMakingPage() {
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5 relative">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
             <span className="text-white">Fermentation </span>Innovation
           </TitleSection>

@@ -24,7 +24,7 @@ export default function Hero({ title, image }: HeroProps) {
         unoptimized
       />
       {title && (
-        <div className="container mx-auto relative z-50">
+        <div className="container max-w-[1100px] mx-auto relative z-50">
           <h1 className="font-alegreya-sans text-8xl">{title}</h1>
           <div className="h-2 w-8 bg-white"></div>
         </div>

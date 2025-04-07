@@ -14,7 +14,7 @@ export default async function ClimatePage() {
     <>
       <Hero image={heroImg}>
         <div className="flex">
-          <div className="container mx-auto relative z-50">
+          <div className="container max-w-[1100px] mx-auto relative z-50">
             <h1 className="font-alegreya-sans text-8xl">Climate</h1>
             <div className="h-2 w-8 bg-white"></div>
             <div className="mt-10">
@@ -67,7 +67,7 @@ export default async function ClimatePage() {
         </div>
       </Hero>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <div className="grid md:grid-cols-12 gap-5 ">
             <div className="md:col-span-8 col-span-12 ">
               <BorderedParagraph>
@@ -87,7 +87,7 @@ export default async function ClimatePage() {
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <span className="text-gold text-xl md:text-4xl font-light font-alegreya-sans">
             Winkler Classification and Cachapoal Andes:
           </span>
@@ -198,7 +198,7 @@ export default async function ClimatePage() {
         </div>
       </section>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
             <span className="text-white">Cachapoal Andes</span> vs other D.O.
           </TitleSection>
@@ -206,7 +206,7 @@ export default async function ClimatePage() {
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
             Annual <span className="text-white">Rainfall</span>
           </TitleSection>

@@ -11,14 +11,14 @@ export default function WineMakingPage() {
     <>
       <Hero image={heroImg}>
         <div className="flex">
-          <div className="container mx-auto relative z-50">
+          <div className="container max-w-[1100px] mx-auto relative z-50">
             <h1 className="font-alegreya-sans text-8xl">Wines</h1>
             <div className="h-2 w-8 bg-white"></div>
           </div>
         </div>
       </Hero>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <BorderedParagraph>
             Unique and elegant wines with a full sense of place.
           </BorderedParagraph>

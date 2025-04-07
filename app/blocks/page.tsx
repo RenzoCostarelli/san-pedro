@@ -7,14 +7,14 @@ export default function BlocksPage() {
     <>
       <Hero image={heroImg}>
         <div className="flex">
-          <div className="container mx-auto relative z-50">
+          <div className="container max-w-[1100px] mx-auto relative z-50">
             <h1 className="font-alegreya-sans text-8xl">Blocks</h1>
             <div className="h-2 w-8 bg-white"></div>
           </div>
         </div>
       </Hero>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
-        <div className="container mx-auto">
+        <div className="container max-w-[1100px] mx-auto">
           <BorderedParagraph>
             3 UNIQUE WINES, 5 VARIETIES, 1 VINEYARD Each variety tells a
             different story, shaped by its soils and location. Thats why we work
