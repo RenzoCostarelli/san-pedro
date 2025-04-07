@@ -118,11 +118,16 @@ export default async function ClimatePage() {
               </p>
             </div>
           </div>
-          <div className="h-96 mt-15 grid md:grid-cols-12 grid-cols-1 gap-5">
-            <div className="md:col-span-8 col-span-12">
+          <div className="h-96 mt-15 grid md:grid-cols-12 grid-cols-1 gap-5 relative">
+            <div className="absolute h-full w-[20px] left-0 grid place-content-center">
+              <div className="bg-gold-medium py-1 px-5 font-alegreya-sans -rotate-90">
+                WINKLER
+              </div>
+            </div>
+            <div className="md:col-span-8 col-span-12 pl-10">
               <WinklerChart />
             </div>
-            <div className="md:col-span-3 col-end-10 col-span-12 ">
+            <div className="md:col-span-4 col-end-12 col-span-12 px-5">
               <div className="border border-gold h-max">
                 <div className="grid md:grid-cols-12 grid-cols-1">
                   <div className="bg-gold text-white col-span-7 text-center py-2">

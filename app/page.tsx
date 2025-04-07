@@ -31,7 +31,7 @@ export default function Home() {
             unoptimized
             className="z-10"
           />
-          <p className="text-xl mt-8">
+          <p className="text-xl mt-8 text-gold-light">
             An exceptional terroir, at the foothills of the Andes,
             <br />
             shaped by millions of years of earthquakes and volcanic activity.

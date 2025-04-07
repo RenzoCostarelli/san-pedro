@@ -17,6 +17,7 @@
 
   --gold: #9f8462;
   --gold-light: #ede3cf;
+  --gold-medium: #b6ab8c;
 
   --gray-dark: #000a1e;
 
@@ -32,6 +33,8 @@
   --color-blue-dark: var(--blue-dark);
   --color-gold: var(--gold);
   --color-gold-light: var(--gold-light);
+  --color-gold-medium: var(--gold-medium);
+
   --color-gray-dark: var(--gray-dark);
 
   --font-sans: var(--font-gill-sans);
