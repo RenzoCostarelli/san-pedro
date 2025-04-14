@@ -4,6 +4,7 @@ import TitleSection from "@/components/title-section";
 import heroImg from "@/public/images/soils-header.jpg";
 import mappingImg from "@/public/images/electrical-conductivity-mapping.jpg";
 import Image from "next/image";
+import MapImage from "@/public/images/mapa-soils.svg";
 
 export default function SoilsPage() {
   return (
@@ -64,7 +65,17 @@ export default function SoilsPage() {
         </div>
         <div className="bg-blue-dark w-full bottom-0 py-10 absolute"></div>
       </section>
-      <section className="bg-blue-dark py-15 md:px-0 px-5 h-[50vh]"></section>
+      <section className="bg-blue-dark py-15 md:px-0 px-5 h-[100vh]">
+        <div className="w-full h-full">
+          <Image
+            src={MapImage}
+            width={1400}
+            height={1400}
+            alt=""
+            className="h-full w-full object-contain"
+          />
+        </div>
+      </section>
       <section className="bg-blue pt-15 md:px-0 px-5">
         <div className="container max-w-[1100px] mx-auto">
           <TitleSection>

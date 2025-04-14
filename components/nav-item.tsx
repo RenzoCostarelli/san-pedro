@@ -25,6 +25,7 @@ export default function NavItem({ href, label }: NavItemProps) {
       className={`font-sans px-4 py-2 hover:bg-gold-light hover:text-gray-dark transition-colors ${
         active ? "bg-gold-light text-gray-dark" : "text-white"
       }`}
+      prefetch
     >
       {label}
     </Link>
