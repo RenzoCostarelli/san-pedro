@@ -1,6 +1,7 @@
 // components/SoilDetailsDialog.tsx
 "use client";
 
+import Image from "next/image";
 import { useEffect } from "react";
 
 type Props = {
@@ -31,20 +32,32 @@ export default function SoilDetailsDialog({
 
   return (
     <div className="fixed inset-0 z-50 bg-black/10 flex items-start justify-start pt-32 pl-32">
-      <div className="bg-blue p-6 max-w-md text-white relative">
+      <div className="bg-blue p-6 max-w-xl text-white relative">
         <button
           onClick={onClose}
-          className="absolute right-4 top-4 text-white text-xl"
+          className="absolute right-4 top-4 text-white text-xl cursor-pointer"
         >
           ✕
         </button>
-        <h2 className="text-2xl text-gold tracking-widest font-alegreya-sans mb-2 uppercase">
-          {title}
-        </h2>
-        <p className="mb-4 font-alegreya-sans tracking-wide text-gold-light leading-8 font-light">
-          {description}
-        </p>
-        {/* <img src={image} alt={title} className="w-full h-auto rounded-md" /> */}
+        <div className="grid md:grid-cols-7 gap-4">
+          <div className="md:col-span-4 mb-4">
+            <h2 className="text-2xl text-gold tracking-widest font-alegreya-sans mb-2 uppercase">
+              {title}
+            </h2>
+            <p className="mb-4 font-alegreya-sans tracking-wide text-gold-light leading-8 font-light">
+              {description}
+            </p>
+          </div>
+          <div className="md:col-span-3">
+            <Image
+              src={image}
+              alt={title}
+              className="w-full h-auto rounded-md min-w-[250px]"
+              width={900}
+              height={1055}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

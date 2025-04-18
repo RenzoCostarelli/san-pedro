@@ -65,8 +65,17 @@ export default function SoilsPage() {
         </div>
         <div className="bg-blue-dark w-full bottom-0 py-10 absolute"></div>
       </section>
-      <section className="bg-blue-dark py-15 md:px-0 px-5 h-[100vh]">
-        <div className="w-full h-full">
+      <section className="bg-blue-dark py-15 md:px-0 px-5 md:h-screen">
+        <div className="container max-w-[1100px] mx-auto">
+          <span className="font-alegreya-sans tracking-widest text-gold text-2xl font-light">
+            DIVERSITY OF SOILS IN CACHAPOAL ANDES:
+          </span>
+          <h2 className="text-gold font-alegreya font-medium text-3xl md:text-[2.05rem]">
+            <span className="text-white">7 Main types,</span> 3 Uniques Wine
+            Profiles
+          </h2>
+        </div>
+        <div className="w-full">
           <SoilsMap />
         </div>
       </section>
