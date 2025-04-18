@@ -27,7 +27,7 @@ export default function SoilsMap() {
                 onClick={() => showDetailsDialog(soil.id)}
               >
                 <div className="w-4 h-4 bg-gold rounded-full"></div>
-                <span className="text-gold-light font-alegreya-sans uppercase tracking-wider">
+                <span className="text-gold-light font-alegreya-sans font-light uppercase tracking-widest">
                   {soil.title}
                 </span>
               </li>

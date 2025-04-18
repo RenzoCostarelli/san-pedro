@@ -31,15 +31,15 @@ export default function SoilDetailsDialog({
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/10 flex items-start justify-start pt-32 pl-32">
-      <div className="bg-blue p-6 max-w-xl text-white relative">
+    <div className="fixed inset-0 z-50 bg-black/10 flex items-start justify-start md:pt-32 md:pl-32 p-2">
+      <div className="bg-blue p-6 md:max-w-xl text-white relative">
         <button
           onClick={onClose}
           className="absolute right-4 top-4 text-white text-xl cursor-pointer"
         >
           ✕
         </button>
-        <div className="grid md:grid-cols-7 gap-4">
+        <div className="grid md:grid-cols-7 grid-cols-1 gap-4">
           <div className="md:col-span-4 mb-4">
             <h2 className="text-2xl text-gold tracking-widest font-alegreya-sans mb-2 uppercase">
               {title}
