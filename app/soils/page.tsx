@@ -4,6 +4,7 @@ import TitleSection from "@/components/title-section";
 import heroImg from "@/public/images/soils-header.jpg";
 import mappingImg from "@/public/images/electrical-conductivity-mapping.jpg";
 import Image from "next/image";
+import SoilsMap from "@/components/soils-map";
 
 export default function SoilsPage() {
   return (
@@ -31,8 +32,8 @@ export default function SoilsPage() {
             An in-depth understanding of our soils has been a constant concern
             for our team, leading us to conduct several studies over the years.
           </h2>
-          <div className="grid md:grid-cols-3 mt-15 relative z-10">
-            <div className="col-span-2">
+          <div className="grid md:grid-cols-3 grid-cols-1 mt-15 relative z-10">
+            <div className="md:col-span-2">
               <p className="font-light tracking-wider font-sans leading-8  pr-10">
                 The detailed geological investigation of 23 points, primarily
                 soil pits ranging from 1.5 to 2 meters deep strategically
@@ -64,7 +65,20 @@ export default function SoilsPage() {
         </div>
         <div className="bg-blue-dark w-full bottom-0 py-10 absolute"></div>
       </section>
-      <section className="bg-blue-dark py-15 md:px-0 px-5 h-[50vh]"></section>
+      <section className="bg-blue-dark py-15 md:px-0 px-5 md:h-screen">
+        <div className="container max-w-[1100px] mx-auto">
+          <span className="font-alegreya-sans tracking-widest text-gold text-2xl font-light">
+            DIVERSITY OF SOILS IN CACHAPOAL ANDES:
+          </span>
+          <h2 className="text-gold font-alegreya font-medium text-3xl md:text-[2.05rem]">
+            <span className="text-white">7 Main types,</span> 3 Uniques Wine
+            Profiles
+          </h2>
+        </div>
+        <div className="w-full">
+          <SoilsMap />
+        </div>
+      </section>
       <section className="bg-blue pt-15 md:px-0 px-5">
         <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
