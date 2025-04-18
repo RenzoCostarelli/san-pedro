@@ -16,8 +16,8 @@ export default function SoilsMap() {
   const closeDialog = () => setActiveSoilId(null);
 
   return (
-    <div className="grid md:grid-cols-12 gap-4">
-      <div className="md:col-span-2 md:col-start-2  grid items-end">
+    <div className="grid md:grid-cols-12 gap-4 ">
+      <div className="md:col-span-3 md:col-start-2  grid items-end ">
         <div>
           <ul>
             {soilTypes.map((soil) => (
@@ -37,7 +37,7 @@ export default function SoilsMap() {
           </ul>
         </div>
       </div>
-      <div className=" md:col-span-9 md:h-[80vh]">
+      <div className=" md:col-span-8 md:h-[80vh] pb-10">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
