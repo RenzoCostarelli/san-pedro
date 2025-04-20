@@ -59,7 +59,7 @@ export default function SoilsMap() {
             id="Layer_2"
             data-name="Layer 2"
             onClick={() => showDetailsDialog("fine-colluvial")}
-            className={`relative transition-all cursor-pointer ${
+            className={`relative transition-all cursor-pointer hover:opacity-100 ${
               hoveredSoilId === "fine-colluvial" ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -127,7 +127,7 @@ export default function SoilsMap() {
           <g
             id="Layer_3"
             data-name="Layer 3"
-            className={`relative transition-all cursor-pointer ${
+            className={`relative transition-all cursor-pointer hover:opacity-100 ${
               hoveredSoilId === "balanced-colluvial"
                 ? "opacity-100"
                 : "opacity-0"
@@ -173,7 +173,7 @@ export default function SoilsMap() {
           <g
             id="Layer_5"
             data-name="Layer 5"
-            className={`relative transition-all cursor-pointer ${
+            className={`relative transition-all cursor-pointer hover:opacity-100 ${
               hoveredSoilId === "rocky-colluvial" ? "opacity-100" : "opacity-0"
             }`}
             onClick={() => showDetailsDialog("rocky-colluvial")}
@@ -192,7 +192,7 @@ export default function SoilsMap() {
           <g
             id="Layer_4"
             data-name="Layer 4"
-            className={`relative transition-all cursor-pointer ${
+            className={`relative transition-all cursor-pointer hover:opacity-100 ${
               hoveredSoilId === "fluvial-matrix" ? "opacity-100" : "opacity-0"
             }`}
             onClick={() => showDetailsDialog("fluvial-matrix")}
@@ -206,7 +206,7 @@ export default function SoilsMap() {
           <g
             id="Layer_6"
             data-name="Layer 6"
-            className={`relative transition-all cursor-pointer ${
+            className={`relative transition-all cursor-pointer hover:opacity-100 ${
               hoveredSoilId === "balanced-fluvial" ? "opacity-100" : "opacity-0"
             }`}
             onClick={() => showDetailsDialog("balanced-fluvial")}
@@ -220,7 +220,7 @@ export default function SoilsMap() {
           <g
             id="Layer_7"
             data-name="Layer 7"
-            className={`relative transition-all cursor-pointer ${
+            className={`relative transition-all cursor-pointer hover:opacity-100 ${
               hoveredSoilId === "intrusive-granodiorite"
                 ? "opacity-100"
                 : "opacity-0"
@@ -236,7 +236,7 @@ export default function SoilsMap() {
           <g
             id="Layer_8"
             data-name="Layer 8"
-            className={`relative transition-all cursor-pointer ${
+            className={`relative transition-all cursor-pointer hover:opacity-100 ${
               hoveredSoilId === "intrusive-andesitic-porphyry"
                 ? "opacity-100"
                 : "opacity-0"
