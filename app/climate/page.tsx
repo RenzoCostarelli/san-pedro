@@ -237,8 +237,8 @@ export default async function ClimatePage() {
       </section>
       <section className="py-15 md:px-0 px-5 bg-blue-dark">
         <div className="container max-w-[1100px] mx-auto">
-          <TitleSection>Heliofania</TitleSection>
-          <div className="mt-15">
+          <TitleSection>Heliophany</TitleSection>
+          <div className="mt-15 px-10">
             <HelioSlider />
           </div>
         </div>
