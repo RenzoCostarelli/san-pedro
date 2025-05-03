@@ -12,7 +12,9 @@ export default function SoilsPage() {
       <Hero image={heroImg}>
         <div className="flex">
           <div className="container max-w-[1100px] mx-auto relative z-50">
-            <h1 className="font-alegreya-sans text-8xl">Soils</h1>
+            <h1 className="font-alegreya-sans md:text-6xl xl:text-8xl text-gold-light">
+              Soils
+            </h1>
             <div className="h-2 w-8 bg-white"></div>
           </div>
         </div>
@@ -34,7 +36,7 @@ export default function SoilsPage() {
           </h2>
           <div className="grid md:grid-cols-3 grid-cols-1 mt-15 relative z-10">
             <div className="md:col-span-2">
-              <p className="font-light tracking-wider font-sans leading-8  pr-10">
+              <p className="font-light tracking-wider font-sans leading-8 pr-10 text-white">
                 The detailed geological investigation of 23 points, primarily
                 soil pits ranging from 1.5 to 2 meters deep strategically
                 located among the rows of currently productive blocks and some
