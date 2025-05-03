@@ -21,6 +21,8 @@ export default function HelioSlider() {
           fill
           objectFit="cover"
           className="rounded-lg"
+          unoptimized
+          priority={currentStep === 0}
         />
       </div>
 
