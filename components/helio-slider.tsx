@@ -32,8 +32,12 @@ export default function HelioSlider() {
         max={TOTAL_STEPS - 1}
         value={currentStep}
         onChange={handleChange}
-        className="w-full bg-red-400"
+        className="w-full custom-slider"
       />
+      <div className="flex justify-between mt-2 px-1 text-lg font-semibold text-white italic w-full">
+        <span>PM</span>
+        <span>AM</span>
+      </div>
     </div>
   );
 }
