@@ -24,7 +24,7 @@ export default function InnovationIitemsList({
             </span>
           </DashedTitle>
           {innovationItem.items.map((item, index) => (
-            <div key={index}>
+            <div key={index} className="text-white">
               <span className="text-gold">{item.label} </span>
               {item.value}
             </div>

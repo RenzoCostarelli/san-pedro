@@ -1,4 +1,5 @@
 import BorderedParagraph from "@/components/bordered-paragraph";
+import HelioSlider from "@/components/helio-slider";
 import Hero from "@/components/hero";
 import RainfallScatter from "@/components/ranfallScatter";
 import TitleSection from "@/components/title-section";
@@ -15,7 +16,9 @@ export default async function ClimatePage() {
       <Hero image={heroImg}>
         <div className="flex">
           <div className="container max-w-[1100px] mx-auto relative z-50">
-            <h1 className="font-alegreya-sans text-8xl">Climate</h1>
+            <h1 className="font-alegreya-sans md:text-6xl xl:text-8xl text-gold-light">
+              Climate
+            </h1>
             <div className="h-2 w-8 bg-white"></div>
             <div className="mt-10">
               <div className="w-max font-alegreya-sans font-light">
@@ -97,7 +100,7 @@ export default async function ClimatePage() {
           </TitleSection>
           <div className="grid md:grid-cols-2 mt-15 gap-5">
             <div className="space-y-5">
-              <p className="font-light tracking-wider font-sans leading-8">
+              <p className="font-light tracking-wider font-sans leading-8 text-white">
                 The Winkler Index, is a method used to classify wine-growing
                 regions based on their climate, specifically the amount of heat
                 they accumulate during the growing season. It calculates the
@@ -106,7 +109,7 @@ export default async function ClimatePage() {
               </p>
             </div>
             <div className="space-y-5">
-              <p className="font-light tracking-wider leading-8 font-sans">
+              <p className="font-light tracking-wider leading-8 font-sans text-white">
                 The index divides regions into five climate categories, ranging
                 from Region I (coolest) to Region V (hottest), helping vintners
                 determine which grape varieties are best suited to a particular
@@ -179,7 +182,7 @@ export default async function ClimatePage() {
           </div>
           <div className="grid md:grid-cols-2 mt-15 gap-5">
             <div className="space-y-5">
-              <p className="font-light tracking-wider font-sans leading-8">
+              <p className="font-light tracking-wider font-sans leading-8 text-white">
                 The Winkler Index, is a method used to classify wine-growing
                 regions based on their climate, specifically the amount of heat
                 they accumulate during the growing season. It calculates the
@@ -188,7 +191,7 @@ export default async function ClimatePage() {
               </p>
             </div>
             <div className="space-y-5">
-              <p className="font-light tracking-wider leading-8 font-sans">
+              <p className="font-light tracking-wider leading-8 font-sans text-white">
                 The index divides regions into five climate categories, ranging
                 from Region I (coolest) to Region V (hottest), helping vintners
                 determine which grape varieties are best suited to a particular
@@ -215,7 +218,7 @@ export default async function ClimatePage() {
           <TitleSection>
             Annual <span className="text-white">Rainfall</span>
           </TitleSection>
-          <div className="grid md:grid-cols-2 mt-15 gap-5">
+          <div className="grid md:grid-cols-2 mt-15 gap-5 text-white">
             <div className="space-y-5">
               <p className="font-light tracking-wider font-sans leading-8">
                 The Winkler Index, is a method used to classify wine-growing
@@ -230,6 +233,14 @@ export default async function ClimatePage() {
             </div>
           </div>
           <RainfallScatter />
+        </div>
+      </section>
+      <section className="py-15 md:px-0 px-5 bg-blue-dark">
+        <div className="container max-w-[1100px] mx-auto">
+          <TitleSection>Heliofania</TitleSection>
+          <div className="mt-15">
+            <HelioSlider />
+          </div>
         </div>
       </section>
     </>
