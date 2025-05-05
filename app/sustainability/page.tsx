@@ -67,7 +67,7 @@ export default function SustainabilityPage() {
               key={index}
               className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10 group"
             >
-              <div className="group-even:order-2 grid md:grid-cols-6">
+              <div className="group-even:order-2 grid md:grid-cols-6 max-w-[630px] group-odd:ml-auto">
                 <div className="group-even:col-end-6 col-start-2 group-even:col-start-1 col-span-6 grid items-center">
                   <div>
                     <DashedTitle>{item.title}</DashedTitle>
@@ -101,7 +101,7 @@ export default function SustainabilityPage() {
       </section>
       <section className="bg-blue py-15 md:px-0 px-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 group">
-          <div className="group-even:order-2 grid md:grid-cols-6">
+          <div className="group-even:order-2 grid md:grid-cols-6  max-w-[630px] group-odd:ml-auto">
             <div className="group-even:col-end-6 col-start-2 group-even:col-start-1 col-span-6 grid items-center">
               <div>
                 <DashedTitle>

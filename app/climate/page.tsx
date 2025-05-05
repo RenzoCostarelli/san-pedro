@@ -22,9 +22,17 @@ export default async function ClimatePage() {
             <div className="h-2 w-8 bg-white"></div>
             <div className="mt-10">
               <div className="w-max font-alegreya-sans font-light">
-                <p className="bg-gold-light w-max text-gold py-1 pl-5 pr-7">
-                  WHEATHER STATION
-                </p>
+                <div className="flex items-center gap-2">
+                  <p className="bg-gold-light w-max text-gold py-1 pl-5 pr-7">
+                    WHEATHER STATION
+                  </p>
+                  <div className="flex items-center gap-1">
+                    <span className="border border-white p-1 rounded-full animate-pulse">
+                      <div className="border bg-white rounded-full h-2 w-2"></div>
+                    </span>
+                    <div className="italic tracking-wider">LIVE</div>
+                  </div>
+                </div>
                 <div className="columns-2 bg-gold py-3 px-5">
                   <ul>
                     <li>

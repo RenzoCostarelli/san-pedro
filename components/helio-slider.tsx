@@ -6,7 +6,7 @@ import Image from "next/image";
 const TOTAL_STEPS = 13;
 
 export default function HelioSlider() {
-  const [currentStep, setCurrentStep] = useState(0);
+  const [currentStep, setCurrentStep] = useState(12);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCurrentStep(parseInt(e.target.value));
@@ -16,13 +16,13 @@ export default function HelioSlider() {
     <div className="flex flex-col items-center space-y-4">
       <div className="w-full aspect-video relative">
         <Image
-          src={`/images/helio/heliofania_${currentStep + 1}.jpg`}
-          alt={`Step ${currentStep + 1}`}
+          src={`/images/helio/heliofania_${TOTAL_STEPS - currentStep}.jpg`}
+          alt=""
           fill
           objectFit="cover"
           className="rounded-lg"
           unoptimized
-          priority={currentStep === 0}
+          priority={currentStep === 12}
         />
       </div>
 
