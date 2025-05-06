@@ -34,8 +34,8 @@ export default function SoilsPage() {
             An in-depth understanding of our soils has been a constant concern
             for our team, leading us to conduct several studies over the years.
           </h2>
-          <div className="grid md:grid-cols-3 grid-cols-1 mt-15 relative z-10">
-            <div className="md:col-span-2">
+          <div className="grid md:grid-cols-2 grid-cols-1 mt-15 relative z-10">
+            <div className="md:col-span-1">
               <p className="font-light tracking-wider font-sans leading-8 pr-10 text-white">
                 The detailed geological investigation of 23 points, primarily
                 soil pits ranging from 1.5 to 2 meters deep strategically
