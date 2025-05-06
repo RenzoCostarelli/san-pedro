@@ -19,7 +19,6 @@ export default function SoilDetailsDialog({
   description,
   image,
 }: Props) {
-  console.log(image);
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
