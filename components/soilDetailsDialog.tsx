@@ -31,7 +31,7 @@ export default function SoilDetailsDialog({
 
   return (
     <div className="fixed inset-0 z-50 bg-black/10 flex items-start justify-start md:pt-32 md:pl-32 p-2">
-      <div className="bg-blue p-6 md:max-w-xl text-white relative">
+      <div className="bg-blue p-6 md:max-w-2xl text-white relative">
         <button
           onClick={onClose}
           className="absolute right-4 top-4 text-white text-xl cursor-pointer"

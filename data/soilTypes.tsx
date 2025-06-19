@@ -1,25 +1,25 @@
 export const soilTypes = [
   {
     id: "fine-colluvial",
-    title: "Fine Colluvial",
+    title: "Fine Coluvial",
     description:
-      "These soils were formed by the decomposition of transported colluvial deposits lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem i",
+      "These soils were formed by the decomposition of transported colluvial deposits, originating from distant areas of alluvial fans and the lower slopes of surrounding hills. They are primarily found at the edges of the vineyard and exhibit a variety of fine sedimentation with high levels of silt and clay, along with scattered rocky fragments. This composition explains the high levels of electrical conductivity observed in these soils.",
     image: "/images/soils/Bloque01.png",
     icon: "/images/soils/1.png",
   },
   {
     id: "balanced-colluvial",
-    title: "Balanced Colluvial",
+    title: "Balanced Coluvial",
     description:
-      "Balanced colluvial soils combine rock fragments with silt lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem i",
+      "These soils were formed from the breakdown of transported colluvial deposits, originating in nearby and mid-range areas of alluvial fans. They are distributed from the higher parts of the vineyard to more distant areas, following a central pattern within the vineyard. These soils consist of a balanced mix of fine sediments (silt, sand, and clay) and moderate-sized rocky fragments, predominantly andesites and granodiorites. Their proximity to drainage channels helps distribute coarse fragments over longer distances. This composition explains why they exhibit intermediate levels of electrical conductivity on the conductivity map.",
     image: "/images/soils/Bloque01.png",
     icon: "/images/soils/2.png",
   },
   {
     id: "rocky-colluvial",
-    title: "Rocky Colluvial",
+    title: "Rocky Coluvial",
     description:
-      "Highly permeable soils with significant rocky content lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem i",
+      "These soils were formed in the area closest to the apex or proximal zone of an alluvial fan, where the transporting channel rapidly loses energy and deposits heavier sediment loads. This soil type is specifically identified in pit Al-07, characterized by a high proportion of large, sub-angular fragments of andesite and granodiorite (10-40 cm), which make up over 60% of the total soil. The finer fraction, consisting mainly of silt and clay, is less abundant and contributes to the low conductivity values shown on the CEM conductivity map.",
     image: "/images/soils/Bloque01.png",
     icon: "/images/soils/3.png",
   },
@@ -35,7 +35,7 @@ export const soilTypes = [
     id: "balanced-fluvial",
     title: "Balanced Fluvial",
     description:
-      "A mix of fluvial sediments with both sand and silt dominance. These soils support even ripening and are often located near water streams, making them versatile for different grape varieties.",
+      "These soils were formed from the breakdown of transported colluvial deposits, originating in nearby and mid-range areas of alluvial fans. They are distributed from the higher parts of the vineyard to more distant areas, following a central pattern within the vineyard. These soils consist of a balanced mix of fine sediments (silt, sand, and clay) and moderate-sized rocky fragments, predominantly andesites and granodiorites. Their proximity to drainage channels helps distribute coarse fragments over longer distances. This composition explains why they exhibit intermediate levels of electrical conductivity on the conductivity map.",
     image: "/images/soils/Bloque05.png",
     icon: "/images/soils/5.png",
   },
@@ -55,12 +55,4 @@ export const soilTypes = [
     image: "/images/soils/Bloque03.png",
     icon: "/images/soils/7.png",
   },
-  // {
-  //   id: "cordillera-de-los-andes",
-  //   title: "Cordillera de los Andes",
-  //   description:
-  //     "Soils located at the foothills of the Andes Mountain Range, often shallow and rocky, with significant mineral diversity. They present a unique terroir with high altitude influence.",
-  //   image: "/images/soils/Bloque01.png",
-  //   icon: "/images/soils/1.png",
-  // },
 ];
