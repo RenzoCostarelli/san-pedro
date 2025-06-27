@@ -15,9 +15,13 @@ export default function SoilsMap() {
 
   const showDetailsDialog = (id: string) => {
     setActiveSoilId(id);
+    setHoveredSoilId(id);
   };
 
-  const closeDialog = () => setActiveSoilId(null);
+  const closeDialog = () => {
+    setActiveSoilId(null);
+    setHoveredSoilId(null);
+  };
 
   return (
     <div className="grid md:grid-cols-12 gap-4 ">
@@ -28,9 +32,13 @@ export default function SoilsMap() {
               <li
                 key={soil.id}
                 className="flex items-center gap-2 mb-4 cursor-pointer"
-                onClick={() => showDetailsDialog(soil.id)}
+                onClick={() => {
+                  showDetailsDialog(soil.id);
+                }}
                 onMouseEnter={() => setHoveredSoilId(soil.id)}
-                onMouseLeave={() => setHoveredSoilId(null)}
+                onMouseLeave={() => {
+                  if (!activeSoilId) setHoveredSoilId(null);
+                }}
               >
                 <div className="rounded-full">
                   <Image src={soil.icon} alt="" width={32} height={32} />

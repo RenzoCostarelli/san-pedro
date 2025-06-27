@@ -80,18 +80,25 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className=" bg-blue-dark relative">
-        <div className="absolute h-full w-full inset-0">
-          <div className="absolute w-4 h-4 bg-red-600 top-14 right-96 rounded-full"></div>
+      <section className="bg-blue-dark">
+        <div className="relative">
+          <div className="absolute top-20 w-full bg-amber-500 z-10 h-max">
+            <div className="absolute bg-blue right-10 px-2 py-1 font-alegreya-sans">
+              ANDES MOUNTAIN RANGE
+            </div>
+            <div className="absolute bg-blue left-60 px-2 py-1 font-alegreya-sans">
+              COASTAL MOUNTAIN RANGE
+            </div>
+          </div>
+          <Image
+            src="/images/cachapoal-wineyard.jpg"
+            alt=""
+            width={1864}
+            height={1001}
+            className="object-contain w-full h-max"
+            unoptimized
+          />
         </div>
-        <Image
-          src="/images/home/cachapoal-wineyard.jpg"
-          alt=""
-          width={1864}
-          height={1001}
-          className="object-contain w-full h-max"
-          unoptimized
-        />
       </section>
     </>
   );

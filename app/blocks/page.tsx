@@ -1,3 +1,5 @@
+import BlocksArea from "@/components/blocks-area";
+import BlocksMap from "@/components/blocks-map";
 import BorderedParagraph from "@/components/bordered-paragraph";
 import Hero from "@/components/hero";
 import heroImg from "@/public/images/blocks-header.jpg";
@@ -26,7 +28,9 @@ export default function BlocksPage() {
         </div>
       </section>
 
-      <section className="bg-blue py-15 md:px-0 px-5 h-screen"></section>
+      <section className="bg-[#0a223a] md:px-0 px-5">
+        <BlocksArea />
+      </section>
     </>
   );
 }
