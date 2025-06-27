@@ -1,5 +1,5 @@
 interface TooltipProps {
-  coord: { x: number; y: number }; // porcentaje relativo al viewBox
+  coord: { x: number; y: number };
   variety: string;
   ha: string;
   name: string;
@@ -8,8 +8,8 @@ export default function Tooltip({ coord, name, ha, variety }: TooltipProps) {
   return (
     <div
       className="absolute z-20 -translate-x-1/2 -translate-y-full font-alegreya-sans flex flex-col items-center
-                 rounded-xs bg-blue px-6 py-1 text-xs text-white
-                 whitespace-nowrap pointer-events-none"
+                 rounded-xs bg-blue px-4 py-1 text-xs text-white
+                 whitespace-nowrap hover:z-50 scale-75 origin-bottom transition-all maptooltip cursor-default"
       style={{
         left: `${coord.x}%`,
         top: `${coord.y}%`,

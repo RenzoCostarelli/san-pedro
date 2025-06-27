@@ -163,22 +163,24 @@ export default async function ClimatePage() {
                       <li>2020/2021</li>
                       <li>2021/2022</li>
                       <li>2022/2023</li>
+                      <li>2023/2024</li>
                     </ul>
                   </div>
                   <div className="col-span-5 col-end-13 col-start-8 text-center py-2">
                     <ul>
+                      <li>1784</li>
                       <li>1653</li>
                       <li>1637</li>
                       <li>1888</li>
                       <li>1639</li>
                       <li>1888</li>
                       <li>1711</li>
-                      <li>1639</li>
-                      <li>1888</li>
-                      <li>1711</li>
-                      <li>1637</li>
-                      <li>1711</li>
-                      <li>1639</li>
+                      <li>1752</li>
+                      <li>1887</li>
+                      <li>1673</li>
+                      <li>1684</li>
+                      <li>1976</li>
+                      <li>1751</li>
                     </ul>
                   </div>
                 </div>

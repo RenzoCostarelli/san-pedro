@@ -13,7 +13,7 @@ export default function BlocksMap({ activeBlockIds }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeAreas, setActiveAreas] = useState<string[]>([]);
   return (
-    <div ref={containerRef} className="relative">
+    <div ref={containerRef} className="relative mapwrapper">
       <svg
         id="Layer_1"
         data-name="Layer 1"

@@ -13,7 +13,7 @@ const filtersData = {
     "TN: Touriga Nacional",
     "CAR: Carmenere",
     "PV: Petit Verdot",
-    "MOUT: Mourvedre",
+    "MOUR: Mourvedre",
   ],
 };
 

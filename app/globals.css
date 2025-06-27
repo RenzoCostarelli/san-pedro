@@ -107,3 +107,16 @@ body {
 .custom-slider:focus {
   outline: none;
 }
+
+.mapwrapper:has(.maptooltip:hover) {
+  .maptooltip {
+    opacity: 0.3;
+    &:hover {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+}
+.maptooltip {
+  filter: drop-shadow(0 0 1px white);
+}
