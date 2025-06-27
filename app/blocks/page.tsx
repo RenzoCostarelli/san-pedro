@@ -10,7 +10,7 @@ export default function BlocksPage() {
       <Hero image={heroImg}>
         <div className="flex">
           <div className="container max-w-[1100px] mx-auto relative z-50">
-            <h1 className="font-alegreya-sans md:text-6xl xl:text-8xl text-gold-light">
+            <h1 className="font-alegreya-sans text-5xl md:text-6xl xl:text-8xl text-gold-light">
               Blocks
             </h1>
             <div className="h-2 w-8 bg-white"></div>
@@ -28,7 +28,7 @@ export default function BlocksPage() {
         </div>
       </section>
 
-      <section className="bg-[#0a223a] md:px-0 px-5">
+      <section className="bg-[#0a223a] md:px-0">
         <BlocksArea />
       </section>
     </>

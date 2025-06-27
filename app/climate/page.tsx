@@ -16,7 +16,7 @@ export default async function ClimatePage() {
       <Hero image={heroImg}>
         <div className="flex">
           <div className="container max-w-[1100px] mx-auto relative z-50">
-            <h1 className="font-alegreya-sans md:text-6xl xl:text-8xl text-gold-light">
+            <h1 className="font-alegreya-sans text-5xl md:text-6xl xl:text-8xl text-gold-light">
               Climate
             </h1>
             <div className="h-2 w-8 bg-white"></div>
@@ -106,7 +106,7 @@ export default async function ClimatePage() {
             Unlocking the Potential for{" "}
             <span className="text-white">Balanced Wines</span>
           </TitleSection>
-          <div className="grid md:grid-cols-2 mt-15 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 mt-15 gap-5">
             <div className="space-y-5">
               <p className="font-light tracking-wider font-sans leading-8 text-white">
                 The Winkler Index, is a method used to classify wine-growing

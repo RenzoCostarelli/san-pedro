@@ -208,7 +208,7 @@ export default function WineMakingPage() {
       <Hero image={heroImg}>
         <div className="flex">
           <div className="container max-w-[1100px] mx-auto relative z-50">
-            <h1 className="font-alegreya-sans md:text-6xl xl:text-8xl text-gold-light">
+            <h1 className="font-alegreya-sans text-5xl md:text-6xl xl:text-8xl text-gold-light">
               Winemaking
             </h1>
             <div className="h-2 w-8 bg-white"></div>

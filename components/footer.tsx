@@ -3,7 +3,7 @@
 import Image from "next/image";
 export default function Footer() {
   return (
-    <footer className="bg-blue-dark text-white py-10">
+    <footer className="bg-blue-dark text-white md:px-0 px-2 py-10">
       <div className="container max-w-[1100px] mx-auto flex items-center justify-center gap-5">
         <Image
           src={"/images/logo-home.png"}

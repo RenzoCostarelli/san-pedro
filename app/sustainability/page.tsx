@@ -37,7 +37,7 @@ export default function SustainabilityPage() {
       <Hero image={sustainabilityImg}>
         <div className="flex">
           <div className="container max-w-[1100px] mx-auto relative z-50">
-            <h1 className="font-alegreya md:text-6xl xl:text-8xl font-medium text-gold-light">
+            <h1 className="font-alegreya text-5xl md:text-6xl xl:text-8xl font-medium text-gold-light">
               Sustainability
             </h1>
             <div className="h-2 w-8 bg-white"></div>

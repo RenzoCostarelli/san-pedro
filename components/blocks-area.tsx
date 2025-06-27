@@ -65,53 +65,49 @@ export default function BlocksArea() {
     selected: string | null;
     setSelected: (v: string | null) => void;
   }) => (
-    <div className="mb-8">
-      <ul className="flex flex-col gap-2">
-        {type === "B" && (
-          <>
-            {items.map((item) => (
-              <li key={item}>
-                <button
-                  onClick={() => setSelected(item)}
-                  className={`relative p-4 border border-gold rounded-2xl cursor-pointer text-gold-light uppercase whitespace-nowrap flex items-center gap-2 ${
-                    selected !== item ? "border-transparent" : ""
-                  }`}
-                >
-                  <Image
-                    src={brandLogos[item]}
-                    alt={item}
-                    className="h-auto w-30 object-contain"
-                    width={280}
-                    height={280}
-                  />
-                </button>
-              </li>
-            ))}
-          </>
-        )}
-        {type === "V" && (
-          <>
-            {items.map((item) => (
-              <li key={item}>
-                <button
-                  onClick={() => setSelected(item)}
-                  className={`px-3 py-1 border-1 border-gold transition-all rounded-full cursor-pointer text-gold-light uppercase whitespace-nowrap ${
-                    selected !== item
-                      ? "border-transparent hover:text-white"
-                      : ""
-                  }`}
-                >
-                  <span className="font-bold text-gold">
-                    {item.split(":")[0]}
-                  </span>
-                  {":"}
-                  <span className="text-gold-light">{item.split(":")[1]}</span>
-                </button>
-              </li>
-            ))}
-          </>
-        )}
-      </ul>
+    <div className="md:mb-8 md:px-0 px-3">
+      {type === "B" && (
+        <ul className="flex flex-row md:flex-col gap-2 items-center">
+          {items.map((item) => (
+            <li key={item}>
+              <button
+                onClick={() => setSelected(item)}
+                className={`relative p-4 border border-gold rounded-2xl cursor-pointer text-gold-light uppercase whitespace-nowrap flex items-center gap-2 ${
+                  selected !== item ? "border-transparent" : ""
+                }`}
+              >
+                <Image
+                  src={brandLogos[item]}
+                  alt={item}
+                  className="h-auto w-30 object-contain"
+                  width={280}
+                  height={280}
+                />
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+      {type === "V" && (
+        <ul className="flex md:flex-col flex-wrap">
+          {items.map((item) => (
+            <li key={item}>
+              <button
+                onClick={() => setSelected(item)}
+                className={`px-3 py-1 border-1 border-gold transition-all rounded-full cursor-pointer text-gold-light uppercase whitespace-nowrap ${
+                  selected !== item ? "border-transparent hover:text-white" : ""
+                }`}
+              >
+                <span className="font-bold text-gold">
+                  {item.split(":")[0]}
+                </span>
+                {":"}
+                <span className="text-gold-light">{item.split(":")[1]}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 
