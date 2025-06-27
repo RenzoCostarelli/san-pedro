@@ -7,6 +7,7 @@ import type { Swiper as SwiperType } from "swiper/types";
 import "swiper/css";
 
 import { WineShowcaseProps } from "@/types/wines";
+import Link from "next/link";
 
 export default function WinesSlider({
   wineData,
@@ -80,14 +81,16 @@ export default function WinesSlider({
         >
           {wine.sliderImages.map((src, index) => (
             <SwiperSlide key={index}>
-              <Image
-                src={src}
-                alt={`${wine.sliderTabs[index]?.label} image`}
-                width={534}
-                height={400}
-                className="w-[534px] h-[400px] object-contain bg-yellow-50"
-                unoptimized
-              />
+              <Link href={wine.soilUrl[index]} target="_blank">
+                <Image
+                  src={src}
+                  alt={`${wine.sliderTabs[index]?.label} image`}
+                  width={534}
+                  height={400}
+                  className="w-[534px] h-[400px] object-contain bg-yellow-50"
+                  unoptimized
+                />
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

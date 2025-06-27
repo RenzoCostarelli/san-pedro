@@ -24,6 +24,11 @@ export const winesList: WineShowcaseProps[] = [
     wineBottleImage: altairBottle,
     wineLogoImage: altairLogo,
     sliderImages: [block1, block5, block11],
+    soilUrl: [
+      "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=2",
+      "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=5",
+      "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=11",
+    ],
     sliderTabs: [
       { label: "Balanced Coluvial", value: "balancedcoluvial" },
       { label: "Fine Coluvial", value: "finecoluvial" },
@@ -41,6 +46,9 @@ export const winesList: WineShowcaseProps[] = [
     wineBottleImage: caboBottle,
     wineLogoImage: caboLogo,
     sliderImages: [block1],
+    soilUrl: [
+      "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=2",
+    ],
     sliderTabs: [{ label: "Balanced Coluvial", value: "balancedcoluvial" }],
     defaultTab: "balancedcoluvial",
   },
@@ -55,6 +63,14 @@ export const winesList: WineShowcaseProps[] = [
     wineBottleImage: sideralBottle,
     wineLogoImage: sideralLogo,
     sliderImages: [block1, block3, block5, block10, block11, block09],
+    soilUrl: [
+      "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=2",
+      "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=4",
+      "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=5",
+      "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=10",
+      "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=11",
+      "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=11",
+    ],
     sliderTabs: [
       { label: "Balanced Coluvial", value: "balancedcoluvial" },
       {
