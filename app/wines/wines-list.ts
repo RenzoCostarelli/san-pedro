@@ -5,7 +5,12 @@ import caboLogo from "@/public/images/wines/cabo_logo.png";
 import caboBottle from "@/public/images/wines/cabo_bottle.png";
 import sideralLogo from "@/public/images/wines/sideral_logo.png";
 import sideralBottle from "@/public/images/wines/sideral_bottle.png";
-import slide1 from "@/public/images/climate-header.jpg";
+import block1 from "@/public/images/3d/Bloque01.png";
+import block3 from "@/public/images/3d/Bloque03.png";
+import block5 from "@/public/images/3d/Bloque05.png";
+import block09 from "@/public/images/3d/Bloque09.png";
+import block10 from "@/public/images/3d/Bloque10.png";
+import block11 from "@/public/images/3d/Bloque11.png";
 
 export const winesList: WineShowcaseProps[] = [
   {
@@ -18,30 +23,26 @@ export const winesList: WineShowcaseProps[] = [
       "Production is limited and varies according to the year's weather conditions.",
     wineBottleImage: altairBottle,
     wineLogoImage: altairLogo,
-    sliderImages: [slide1, slide1, slide1],
+    sliderImages: [block1, block5, block11],
     sliderTabs: [
-      { label: "FINE COLUVIAL", value: "finecoluvial" },
-      { label: "Alluvial", value: "alluvial" },
-      { label: "Colluvial", value: "colluvial" },
+      { label: "Balanced Coluvial", value: "balancedcoluvial" },
+      { label: "Fine Coluvial", value: "finecoluvial" },
+      { label: "Rocky Coluvial", value: "rockycoluvial" },
     ],
-    defaultTab: "finecoluvial",
+    defaultTab: "balancedcoluvial",
   },
   {
     wineName: "Cabo de Hornos",
     region: "The pure expression of Cachapoal Andes",
     tagline: "The pure expression of Cachapoal Andes",
     description:
-      "The strength of the Andes Mountain Range is embodied in our iconic wine blend, which stands out for its unparalleled quality and elegance. Altair is the brightest star in our fine wine portfolio, a blend that reflects the finest grapes of the vintage, selected from the varieties and vineyard polygons that really shone in that year.",
+      "The grapes are planted in the Cachapoal Andes Valley, in the foothills of the Andes Mountain Range, and are affected by winds that come down from the mountains, resulting in slow ripening and a concentrated wine of great character.",
     disclaimer: "Limited production.",
     wineBottleImage: caboBottle,
     wineLogoImage: caboLogo,
-    sliderImages: [slide1, slide1, slide1],
-    sliderTabs: [
-      { label: "FINE COLUVIAL", value: "finecoluvial" },
-      { label: "Alluvial", value: "alluvial" },
-      { label: "Colluvial", value: "colluvial" },
-    ],
-    defaultTab: "finecoluvial",
+    sliderImages: [block1],
+    sliderTabs: [{ label: "Balanced Coluvial", value: "balancedcoluvial" }],
+    defaultTab: "balancedcoluvial",
   },
   {
     wineName: "Sideral",
@@ -53,12 +54,21 @@ export const winesList: WineShowcaseProps[] = [
       "Blend: Cabernet Sauvignon | Cabernet Franc Carmenère | Syrah | Petit Verdot",
     wineBottleImage: sideralBottle,
     wineLogoImage: sideralLogo,
-    sliderImages: [slide1, slide1, slide1],
+    sliderImages: [block1, block3, block5, block10, block11, block09],
     sliderTabs: [
-      { label: "FINE COLUVIAL", value: "finecoluvial" },
-      { label: "Alluvial", value: "alluvial" },
-      { label: "Colluvial", value: "colluvial" },
+      { label: "Balanced Coluvial", value: "balancedcoluvial" },
+      {
+        label: "Intrusive Andesitic Porphyry",
+        value: "intrusiveandesiticporphyry",
+      },
+      { label: "Fine Coluvial", value: "finecoluvial" },
+      { label: "Balanced Fluvial", value: "balancedfluvial" },
+      { label: "Rocky Coluvial", value: "rockycoluvial" },
+      {
+        label: "Fluvial With Matrix Dominance",
+        value: "fluvialwithmatrixdominance",
+      },
     ],
-    defaultTab: "finecoluvial",
+    defaultTab: "balancedcoluvial",
   },
 ];
