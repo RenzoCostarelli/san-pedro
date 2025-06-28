@@ -33,7 +33,7 @@ export default function Navigation() {
           </svg>
         </div>
       </div>
-      <div className="md:block hidden w-full bg-[#000000b3] z-90 fixed -top-[100%] backdrop-blur-sm">
+      <div className="md:block hidden w-full bg-[#000000b3] z-90 fixed -top-[1px] backdrop-blur-sm">
         <div className="container max-w-[1100px] mx-auto py-5">
           <nav>
             <div className="flex md:flex-row flex-col items-center justify-between">
