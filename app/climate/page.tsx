@@ -7,6 +7,7 @@ import TitleSection from "@/components/title-section";
 import WinklerChart from "@/components/WinklerChart";
 import { getWeatherData } from "@/lib/actions/wheater";
 import heroImg from "@/public/images/climate-header.jpg";
+import Image from "next/image";
 // import Image from "next/image";
 
 export default async function ClimatePage() {
@@ -129,22 +130,22 @@ export default async function ClimatePage() {
               </p>
             </div>
           </div>
-          <div className="h-96 mt-15 grid md:grid-cols-12 grid-cols-1 gap-5 relative">
-            <div className="absolute h-full w-[20px] left-0 grid place-content-center">
-              <div className="bg-gold-medium py-1 px-5 font-alegreya-sans -rotate-90">
-                WINKLER
+          <div className="md:h-96 mt-15 grid md:grid-cols-12 grid-cols-1 gap-5 relative">
+            <div className="md:col-span-8 col-span-12 pl-10 relative">
+              <div className="absolute h-full w-[20px] left-0 grid place-content-center">
+                <div className="bg-gold-medium py-1 px-5 font-alegreya-sans -rotate-90">
+                  WINKLER
+                </div>
               </div>
-            </div>
-            <div className="md:col-span-8 col-span-12 pl-10">
               <WinklerChart />
             </div>
             <div className="md:col-span-4 col-end-12 col-span-12 px-5">
               <div className="border border-gold h-max">
-                <div className="grid md:grid-cols-12 grid-cols-1">
-                  <div className="bg-gold text-white col-span-7 text-center py-2">
+                <div className="grid grid-cols-12">
+                  <div className="bg-gold text-white md:col-span-7 col-span-8 text-center py-2">
                     HARVEST SEASON
                   </div>
-                  <div className="bg-black col-span-5 col-end-13 col-start-8 text-center py-2">
+                  <div className="bg-black col-span-4 md:col-span-5 col-end-13 col-start-9 text-center py-2">
                     °C
                   </div>
                 </div>
@@ -212,6 +213,14 @@ export default async function ClimatePage() {
                 wine style and quality.
               </p>
             </div>
+          </div>
+          <div className="mt-8">
+            <Image
+              src={"/images/grafico_meses.png"}
+              alt="Grafico meses"
+              width={2930}
+              height={1058}
+            />
           </div>
         </div>
       </section>
