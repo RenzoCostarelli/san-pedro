@@ -91,6 +91,22 @@ export default function WinklerChart() {
       legend: {
         display: false,
       },
+      datalabels: {
+        color: "#C7B38C",
+        font: {
+          family: "Alegreya Sans",
+          size: 12,
+          weight: "bold" as const,
+        },
+        align: "top" as const,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        formatter: (_value: any, context: any) => {
+          return context.dataset.data[context.dataIndex].y;
+        },
+      },
+      tooltip: {
+        enabled: true,
+      },
     },
   };
 

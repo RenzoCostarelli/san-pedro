@@ -21,14 +21,14 @@ ChartJS.register(
 );
 
 const labels = [
-  "Septiembre",
-  "Octubre",
-  "Noviembre",
-  "Diciembre",
-  "Enero",
-  "Febrero",
-  "Marzo",
-  "Abril",
+  "September",
+  "October",
+  "November",
+  "December",
+  "January",
+  "February",
+  "March",
+  "April",
 ];
 
 const dataByPeriod = [
@@ -121,14 +121,38 @@ export const RainChart = () => {
                 color: "#fff",
               },
             },
+            datalabels: {
+              color: "transparent",
+              font: {
+                size: 12,
+                weight: "bold" as const,
+              },
+              align: "start",
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              formatter: (_value: any, context: any) => {
+                return context.dataset.data[context.dataIndex].y;
+              },
+            },
+            tooltip: {
+              enabled: true,
+            },
           },
           scales: {
             x: {
-              ticks: { color: "#fff" },
-              grid: { color: "rgba(255,255,255,0.1)" },
+              ticks: {
+                color: "#C7B38C",
+                font: { family: "Alegreya Sans", size: 16 },
+              },
+              grid: {
+                color: "rgba(255,255,255,0.1)",
+                drawTicks: false,
+              },
             },
             y: {
-              ticks: { color: "#fff" },
+              ticks: {
+                color: "#C7B38C",
+                font: { family: "Alegreya Sans", size: 16 },
+              },
               grid: { color: "rgba(255,255,255,0.1)" },
             },
           },
