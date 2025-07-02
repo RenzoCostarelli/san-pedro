@@ -1,7 +1,7 @@
 import BorderedParagraph from "@/components/bordered-paragraph";
 import HelioSlider from "@/components/helio-slider";
 import Hero from "@/components/hero";
-import { RainChart } from "@/components/rainChart";
+import { RainChart } from "@/components/rainChart2";
 import RainfallScatter from "@/components/ranfallScatter";
 import TitleSection from "@/components/title-section";
 // import WeatherData from "@/components/weather-data";
