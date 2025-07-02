@@ -1,6 +1,7 @@
 import BorderedParagraph from "@/components/bordered-paragraph";
 import HelioSlider from "@/components/helio-slider";
 import Hero from "@/components/hero";
+import { RainChart } from "@/components/rainChart";
 import RainfallScatter from "@/components/ranfallScatter";
 import TitleSection from "@/components/title-section";
 // import WeatherData from "@/components/weather-data";
@@ -215,12 +216,13 @@ export default async function ClimatePage() {
             </div>
           </div>
           <div className="mt-8">
-            <Image
+            {/* <Image
               src={"/images/grafico_meses.png"}
               alt="Grafico meses"
               width={2930}
               height={1058}
-            />
+            /> */}
+            <RainChart />
           </div>
         </div>
       </section>
