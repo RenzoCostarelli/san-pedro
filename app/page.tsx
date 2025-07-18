@@ -37,6 +37,7 @@ export default function Home() {
             shaped by millions of years of earthquakes and volcanic activity.
           </p>
         </div>
+        <div className="absolute bg-gradient-to-t from-blue-dark to-transparent to-40% w-full h-full bottom-0 pointer-events-none"></div>
       </div>
 
       <section className="bg-blue-dark py-15 md:px-0 px-5">
@@ -83,10 +84,10 @@ export default function Home() {
       <section className="bg-blue-dark">
         <div className="relative">
           <div className="absolute top-20 w-full bg-amber-500 z-10 h-max">
-            <div className="absolute bg-blue right-10 px-2 py-1 font-alegreya-sans">
+            <div className="absolute bg-blue right-10 px-2 py-1 font-alegreya-sans text-white">
               ANDES MOUNTAIN RANGE
             </div>
-            <div className="absolute bg-blue left-60 px-2 py-1 font-alegreya-sans">
+            <div className="absolute bg-blue left-60 px-2 py-1 font-alegreya-sans text-white">
               COASTAL MOUNTAIN RANGE
             </div>
           </div>

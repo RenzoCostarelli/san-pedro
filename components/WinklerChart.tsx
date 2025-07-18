@@ -68,7 +68,7 @@ export default function WinklerChart() {
         beginAtZero: true,
         max: 2500,
         ticks: {
-          color: "#C7B38C",
+          color: "#ffffff",
           font: { family: "Alegreya Sans", size: 16 },
           stepSize: 500,
         },
@@ -78,7 +78,7 @@ export default function WinklerChart() {
       },
       x: {
         ticks: {
-          color: "#C7B38C",
+          color: "#ffffff",
           font: { family: "Alegreya Sans", size: 16 },
         },
         grid: {

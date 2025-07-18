@@ -8,7 +8,7 @@ export default function UniqueArea({ title, paragraph }: UniqueAreaProps) {
   return (
     <>
       <DashedTitle>{title}</DashedTitle>
-      <p>{paragraph}</p>
+      <p className="text-white">{paragraph}</p>
     </>
   );
 }

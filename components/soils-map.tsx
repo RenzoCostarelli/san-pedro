@@ -48,6 +48,15 @@ export default function SoilsMap() {
                 </span>
               </li>
             ))}
+            <li className="flex items-center gap-2 mb-4 cursor-pointer">
+              <div className="rounded-full overflow-hidden">
+                {/* <Image src={soil.icon} alt="" width={32} height={32} /> */}
+                <div className="h-8 w-8 bg-white"></div>
+              </div>
+              <span className="text-gold-light font-alegreya-sans font-light uppercase tracking-widest">
+                Andes Mountain Range
+              </span>
+            </li>
           </ul>
         </div>
       </div>
