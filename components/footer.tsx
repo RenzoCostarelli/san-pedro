@@ -13,7 +13,7 @@ export default function Footer() {
           unoptimized
         />
         <div className="w-[1px] bg-gold h-10"></div>
-        <div>Unique and elegant wines with a full sense of place.</div>
+        <div>Expanding the frontiers of winemaking.</div>
       </div>
     </footer>
   );

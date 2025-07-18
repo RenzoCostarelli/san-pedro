@@ -36,7 +36,7 @@ export default async function ClimatePage() {
                   </div>
                 </div>
                 <div className="columns-2 bg-gold py-3 px-5">
-                  <ul>
+                  <ul className="text-white">
                     <li>
                       WIND SPEED:{" "}
                       <span className="font-bold">{data.velocidadViento}</span>
@@ -134,7 +134,7 @@ export default async function ClimatePage() {
           <div className="md:h-96 mt-15 grid md:grid-cols-12 grid-cols-1 gap-5 relative">
             <div className="md:col-span-8 col-span-12 pl-10 relative">
               <div className="absolute h-full w-[20px] left-0 grid place-content-center">
-                <div className="bg-gold-medium py-1 px-5 font-alegreya-sans -rotate-90">
+                <div className="bg-gold-medium text-white py-1 px-5 font-alegreya-sans -rotate-90">
                   WINKLER
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default async function ClimatePage() {
                       <li>2023/2024</li>
                     </ul>
                   </div>
-                  <div className="col-span-5 col-end-13 col-start-8 text-center py-2">
+                  <div className="col-span-5 col-end-13 col-start-8 text-center py-2 text-white">
                     <ul>
                       <li>1784</li>
                       <li>1653</li>
@@ -188,7 +188,7 @@ export default async function ClimatePage() {
                 </div>
               </div>
               <div className="text-center text-gold mt-3">
-                <p>(VALORES AL 30 DE ABRIL)</p>
+                <p>(VALUES AS OF APRIL 30)</p>
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default async function ClimatePage() {
                 The Winkler Index, is a method used to classify wine-growing
                 regions based on their climate, specifically the amount of heat
                 they accumulate during the growing season. It calculates the
-                total degree-days above 10°C (50°F) from April 1 to October 31,
+                total degree-days above 10°C (50°F) from October 1 to April 30,
                 as this is the temperature threshold for vine growth.
               </p>
             </div>

@@ -17,7 +17,7 @@ import nicoveloImg from "@/public/images/winemaking/nicovelo_tulip.png";
 
 const InnovationItems: InnovationItemsProps[] = [
   {
-    title: "GRANITE BARREL",
+    title: "GRANITE EGG",
     image: graniteImg,
     items: [
       {
@@ -91,7 +91,7 @@ const InnovationItems: InnovationItemsProps[] = [
     items: [
       {
         label: "Quantity in the cellar:",
-        value: "1",
+        value: "6",
       },
       {
         label: "Capacity:",
@@ -122,8 +122,7 @@ const InnovationItems: InnovationItemsProps[] = [
       },
       {
         label: "Highlight:",
-        value:
-          "more oxidative container max-w-[1100px], shorter aging, around 12 months.",
+        value: "more oxidative container, shorter aging, around 12 months.",
       },
       {
         label: "Varieties used for aging: ",
@@ -227,8 +226,8 @@ export default function WineMakingPage() {
       <section className="bg-blue py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
-            Ageing
-            <span className="text-white"> Innovation</span>
+            Cutting-edge
+            <span className="text-white"> Ageing Vessels</span>
           </TitleSection>
 
           <div className="py-10">
@@ -297,7 +296,8 @@ export default function WineMakingPage() {
       <section className="bg-blue py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
-            <span className="text-white">Fermentation </span>Innovation
+            <span className="text-white">Cutting-edge</span>
+            Ageing Vessels
           </TitleSection>
           <div className="py-10">
             <InnovationIitemsList innovationItem={InnovationItems[7]} />

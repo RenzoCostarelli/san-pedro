@@ -1,7 +1,7 @@
 export const soilTypes = [
   {
     id: "fine-colluvial",
-    title: "Fine Coluvial",
+    title: "Colluvial With Matrix Dominance",
     description:
       "These soils were formed by the decomposition of transported colluvial deposits, originating from distant areas of alluvial fans and the lower slopes of surrounding hills. They are primarily found at the edges of the vineyard and exhibit a variety of fine sedimentation with high levels of silt and clay, along with scattered rocky fragments. This composition explains the high levels of electrical conductivity observed in these soils.",
     image: "/images/soils/Bloque01.png",
@@ -24,16 +24,16 @@ export const soilTypes = [
     icon: "/images/soils/3.png",
   },
   {
-    id: "fluvial-matrix",
-    title: "Fluvial with Matrix Dominance",
+    id: "balanced-fluvial",
+    title: "Balanced Fluvial",
     description:
       "These soils are found in an isolated patch in the center of the vineyar. They formed from the breakdown of sediments deposited along the banks of a low-energy river channel unable to carry larger fragments. Being disconnected from the main river channel, they're interpreted as abandoned sediment deposits linked to an old branch of the Calabozo stream. These soils initially described as a mix of river and colluvial sediments (angular and rounded fragments). Later, it was found that rounded, well-selected fragments dominate, with a pseudo-layering between gravel and sandy sediments low in silt and clay. This results in low to medium electromagnetic conductivity values.",
     image: "/images/soils/Bloque04.png",
     icon: "/images/soils/4.png",
   },
   {
-    id: "balanced-fluvial",
-    title: "Balanced Fluvial",
+    id: "fluvial-matrix",
+    title: "Fluvial with Matrix Dominance",
     description:
       "Soils associated with this unit evolved from sediments deposited by the moderate-energy Calabozo Stream, similar to the previous unit. These soils are centrally distributed within the vineyard, they feature a balanced mix of fine fractions (sands, silts, and limited clays) and coarser fragments (sub-rounded, 2 to 20 cm, predominantly andesites and similar intrusive rocks from the vineyard hills). These fragments constitute between 40% and 60% of the total soil volume, contributing to the low electrical conductivity values recorded near the stream, attributed to their low clay content.",
     image: "/images/soils/Bloque05.png",
