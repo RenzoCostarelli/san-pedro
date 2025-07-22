@@ -6,6 +6,7 @@ export interface WineShowcaseProps {
   tagline: string; // e.g., "The brighter star of the andes"
   description: string; // main paragraph text
   disclaimer?: string; // optional smaller text at the bottom
+  wineType?: string;
   wineBottleImage: StaticImageData; // URL or static import path
   wineLogoImage: StaticImageData; // URL or static import path
   sliderImages: StaticImageData[]; // array of 3 image URLs for the slider

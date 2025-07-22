@@ -21,6 +21,7 @@ export const winesList: WineShowcaseProps[] = [
       "The strength of the Andes Mountain Range is embodied in our iconic wine blend, which stands out for its unparalleled quality and elegance. Altair is the brightest star in our fine wine portfolio, a blend that reflects the finest grapes of the vintage, selected from the varieties and vineyard polygons that really shone in that year.",
     disclaimer:
       "Production is limited and varies according to the year's weather conditions.",
+    wineType: "Cabernet Sauvignon Blend",
     wineBottleImage: altairBottle,
     wineLogoImage: altairLogo,
     sliderImages: [block1, block5, block11],
@@ -41,8 +42,9 @@ export const winesList: WineShowcaseProps[] = [
     region: "The pure expression of Cachapoal Andes",
     tagline: "The pure expression of Cachapoal Andes",
     description:
-      "The grapes are planted in the Cachapoal Andes Valley, in the foothills of the Andes Mountain Range, and are affected by winds that come down from the mountains, resulting in slow ripening and a concentrated wine of great character.",
+      "The grapes are planted in the Cachapoal Andes Valley, in the foothills of the Andes Mountain Range, and are affected by winds that come down from the mountains, resulting in cold ripening and a concentrated wine of great character.",
     disclaimer: "Limited production.",
+    wineType: "100% Cabernet Sauvignon",
     wineBottleImage: caboBottle,
     wineLogoImage: caboLogo,
     sliderImages: [block1],
@@ -59,7 +61,7 @@ export const winesList: WineShowcaseProps[] = [
     description:
       "Sideral is a blend in which the five estate varieties come together in harmony to faithfully represent the rich terroir diversity of the Cachapoal Andes Valley. In this wine, the winemaker aims to bring out the natural conditions endowed by the vineyard’s location in the Andean foothills",
     disclaimer:
-      "Blend: Cabernet Sauvignon | Cabernet Franc Carmenère | Syrah | Petit Verdot",
+      "Blend: Cabernet Sauvignon | Cabernet Franc | Carmenère | Syrah | Petit Verdot",
     wineBottleImage: sideralBottle,
     wineLogoImage: sideralLogo,
     sliderImages: [block1, block3, block5, block10, block11, block09],

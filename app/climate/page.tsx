@@ -195,35 +195,31 @@ export default async function ClimatePage() {
           <div className="grid md:grid-cols-2 mt-15 gap-5">
             <div className="space-y-5">
               <p className="font-light tracking-wider font-sans leading-8 text-white">
-                The Winkler Index, is a method used to classify wine-growing
-                regions based on their climate, specifically the amount of heat
-                they accumulate during the growing season. It calculates the
-                total degree-days above 10°C (50°F) from October 1 to April 30,
-                as this is the temperature threshold for vine growth.
+                According to the Winkler region classification, the climate of
+                Cachapoal Andes is warm enough to fully ripen a wide variety of
+                grape varieties. Wines from a mildly warm region tend to have a
+                balanced profile, often featuring good fruit concentration,
+                moderate acidity, and well-developed tannins. The warmth allows
+                for full ripening, enhancing the fruit flavors and complexity.
+                Common grape varieties that thrive in mildly warm climates
+                include Cabernet Sauvignon, Syrah, and Carménère, among others.
               </p>
             </div>
             <div className="space-y-5">
               <p className="font-light tracking-wider leading-8 font-sans text-white">
-                The index divides regions into five climate categories, ranging
-                from Region I (coolest) to Region V (hottest), helping vintners
-                determine which grape varieties are best suited to a particular
-                area.
-                <br />
-                This tool is widely used in viticulture to understand the
-                relationship between climate and grape ripening, influencing
-                wine style and quality.
+                Cachapoal Andes predominantly falls under the Winkler III region
+                classification, with the potential to occasionally reach Winkler
+                II in cooler years (upper limit). Being situated in the lower
+                part of Winkler III places us in an ideal zone, combining
+                attributes characteristic of both Winkler classifications. This
+                positioning contributes to the freshness, acidity, and excellent
+                ripeness that define our wines.
               </p>
             </div>
           </div>
-          <div className="mt-8">
-            {/* <Image
-              src={"/images/grafico_meses.png"}
-              alt="Grafico meses"
-              width={2930}
-              height={1058}
-            /> */}
+          {/* <div className="mt-8">
             <RainChart />
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
@@ -259,7 +255,21 @@ export default async function ClimatePage() {
       <section className="py-15 md:px-0 px-5 bg-blue-dark">
         <div className="container max-w-[1100px] mx-auto">
           <TitleSection>Heliophany</TitleSection>
-          <div className="mt-15 px-10">
+          <div className="grid grid-cols-1 mt-15 gap-5">
+            <div className="space-y-5">
+              <p className="font-light tracking-wider font-sans leading-8 text-white">
+                Heliophany refers to the duration and trajectory of sunlight
+                received over the course of the day. This visual representation
+                allows us to understand how solar exposure evolves from sunrise
+                to sunset in Cahapoal Andes vineyards. The path of the sun,
+                combined with the surrounding topography, plays a critical role
+                in vine development—affecting photosynthesis, ripening speed,
+                and ultimately the character of the grapes.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-15 px-10 md:px-0">
             <HelioSlider />
           </div>
         </div>
