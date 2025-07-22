@@ -50,6 +50,9 @@ export default function WinesSlider({
             {wine.description}
           </p>
           <p className="text-gray-400 text-xs">{wine.disclaimer}</p>
+          {wine.wineType && (
+            <p className="text-gray-400 text-xs">{wine.wineType}</p>
+          )}
         </div>
       </div>
 
