@@ -40,7 +40,11 @@ const values = [
   1784, 1653, 1637, 1888, 1639, 1888, 1711, 1752, 1887, 1637, 1684, 1976, 1751,
 ];
 
-export default function WinklerChart() {
+export default function WinklerChart({
+  onPointClick,
+}: {
+  onPointClick?: (index: number) => void;
+}) {
   const data = {
     labels: years,
     datasets: [
@@ -48,7 +52,7 @@ export default function WinklerChart() {
         label: "Winkler",
         data: values,
         borderColor: "#C7B38C",
-        backgroundColor: "#C7B38C",
+        backgroundColor: "#00233c",
         pointBorderColor: "#C7B38C",
         pointBackgroundColor: "#C7B38C",
         tension: 0.3,
@@ -63,6 +67,13 @@ export default function WinklerChart() {
   const options = {
     responsive: true,
     maintainAspectRatio: false,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    onClick: (_evt: unknown, elements: any[]) => {
+      if (elements.length > 0) {
+        const index = elements[0].index;
+        onPointClick?.(index);
+      }
+    },
     scales: {
       y: {
         beginAtZero: true,
@@ -80,6 +91,8 @@ export default function WinklerChart() {
         ticks: {
           color: "#ffffff",
           font: { family: "Alegreya Sans", size: 16 },
+          minRotation: 45,
+          maxRotation: 45,
         },
         grid: {
           color: "rgba(255,255,255,0.1)",
@@ -99,19 +112,18 @@ export default function WinklerChart() {
           weight: "bold" as const,
         },
         align: "top" as const,
+        anchor: "end" as const, // 👈 ancla más arriba del punto
+        offset: 4, // 👈 separa visualmente más aún
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         formatter: (_value: any, context: any) => {
           return context.dataset.data[context.dataIndex].y;
         },
       },
-      tooltip: {
-        enabled: true,
-      },
     },
   };
 
   return (
-    <div className="p-4 rounded-xl w-full max-w-4xl h-[400px]">
+    <div className="p-4 rounded-xl w-full max-w-4xl h-[400px] bg-[#00233c]">
       <Line data={data} options={options} />
     </div>
   );

@@ -1,4 +1,5 @@
 import BorderedParagraph from "@/components/bordered-paragraph";
+import ChillHoursChart from "@/components/ChillHoursChart";
 import HelioSlider from "@/components/helio-slider";
 import Hero from "@/components/hero";
 import { RainChart } from "@/components/rainChart2";
@@ -6,6 +7,8 @@ import RainfallScatter from "@/components/ranfallScatter";
 import TitleSection from "@/components/title-section";
 // import WeatherData from "@/components/weather-data";
 import WinklerChart from "@/components/WinklerChart";
+import WinklerPrecipitationChart from "@/components/WinklerPrecipitationChart";
+import WinklerRainDashboard from "@/components/WinlkerRainDashboard";
 import { getWeatherData } from "@/lib/actions/wheater";
 import heroImg from "@/public/images/climate-header.jpg";
 import Image from "next/image";
@@ -138,8 +141,9 @@ export default async function ClimatePage() {
                   WINKLER
                 </div>
               </div>
-              <WinklerChart />
+              <WinklerRainDashboard />
             </div>
+
             <div className="md:col-span-4 col-end-12 col-span-12 px-5">
               <div className="border border-gold h-max">
                 <div className="grid grid-cols-12">
@@ -192,6 +196,11 @@ export default async function ClimatePage() {
               </div>
             </div>
           </div>
+          {/* <div className="h-full w-full inset-0 bg-blue/80 backdrop-blur-md z-50">
+            <div className="">
+              <RainChart />
+            </div>
+          </div> */}
           <div className="grid md:grid-cols-2 mt-15 gap-5">
             <div className="space-y-5">
               <p className="font-light tracking-wider font-sans leading-8 text-white">
@@ -217,9 +226,6 @@ export default async function ClimatePage() {
               </p>
             </div>
           </div>
-          {/* <div className="mt-8">
-            <RainChart />
-          </div> */}
         </div>
       </section>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
@@ -227,7 +233,9 @@ export default async function ClimatePage() {
           <TitleSection>
             <span className="text-white">Cachapoal Andes</span> vs other D.O.
           </TitleSection>
-          <div className="h-96 bg-gray-400 mt-15"></div>
+          {/* <div className="h-96 bg-gray-400 mt-15"></div> */}
+          <ChillHoursChart />
+          <WinklerPrecipitationChart />
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5">

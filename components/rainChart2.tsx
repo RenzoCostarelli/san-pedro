@@ -86,56 +86,17 @@ const dataByPeriod = [
   },
 ];
 
-const backgroundColors = [
-  "#3B82F6",
-  "#F59E0B",
-  "#6B7280",
-  "#FACC15",
-  "#60A5FA",
-  "#4ADE80",
-  "#1E40AF",
-  "#D97706",
-  "#6B7280",
-  "#FBBF24",
-  "#93C5FD",
-  "#22C55E",
-  "#A5B4FC",
-];
-
-export const RainChart = () => {
-  const datasets = dataByPeriod.map((period, index) => ({
-    label: period.label,
-    data: period.data,
-    backgroundColor: backgroundColors[index % backgroundColors.length],
-  }));
+export const RainChart = ({ periodIndex }: { periodIndex: number }) => {
+  const period = dataByPeriod[periodIndex];
 
   return (
-    <div className="w-full overflow-x-auto">
+    <div className="w-full h-[400px]">
       <Bar
         options={{
           responsive: true,
           plugins: {
-            legend: {
-              position: "right",
-              labels: {
-                color: "#fff",
-              },
-            },
-            datalabels: {
-              color: "transparent",
-              font: {
-                size: 12,
-                weight: "bold" as const,
-              },
-              align: "start",
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              formatter: (_value: any, context: any) => {
-                return context.dataset.data[context.dataIndex].y;
-              },
-            },
-            tooltip: {
-              enabled: true,
-            },
+            legend: { display: false },
+            tooltip: { enabled: true },
           },
           scales: {
             x: {
@@ -143,10 +104,7 @@ export const RainChart = () => {
                 color: "#C7B38C",
                 font: { family: "Alegreya Sans", size: 16 },
               },
-              grid: {
-                color: "rgba(255,255,255,0.1)",
-                drawTicks: false,
-              },
+              grid: { color: "rgba(255,255,255,0.1)" },
             },
             y: {
               ticks: {
@@ -159,7 +117,13 @@ export const RainChart = () => {
         }}
         data={{
           labels,
-          datasets,
+          datasets: [
+            {
+              label: period.label,
+              data: period.data,
+              backgroundColor: "#C7B38C",
+            },
+          ],
         }}
       />
     </div>
