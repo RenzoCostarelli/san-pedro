@@ -45,14 +45,15 @@ export default async function ClimatePage() {
                       <span className="font-bold">{data.velocidadViento}</span>
                     </li>
                     <li>
-                      RADIACION:{" "}
+                      RADIATION:{" "}
                       <span className="font-bold">{data.radiacion}</span>
                     </li>
                     <li>
-                      HUMEDAD: <span className="font-bold">{data.humedad}</span>
+                      HUMIDITY:{" "}
+                      <span className="font-bold">{data.humedad}</span>
                     </li>
                     <li>
-                      PRECIPITACION:{" "}
+                      PRECIPITALITY:{" "}
                       <span className="font-bold">{data.precipitacion}</span>
                     </li>
                   </ul>
@@ -234,8 +235,36 @@ export default async function ClimatePage() {
             <span className="text-white">Cachapoal Andes</span> vs other D.O.
           </TitleSection>
           {/* <div className="h-96 bg-gray-400 mt-15"></div> */}
+          <h3 className="text-center mt-5 mb-3 text-2xl font-alegreya-sans text-white">
+            CHILL HOURS TO RIPENESS
+          </h3>
           <ChillHoursChart />
+          <div className="text-white text-xs">
+            <p className="font-bold">Graphics created by:</p>
+            <p>
+              <span className="font-bold">Fernando Santibáñez</span>,
+              Agricultural Engineer, Ph.D. in Bioclimatology
+            </p>
+            <p>
+              <span className="font-bold">Paula Santibáñez</span>, Civil
+              Engineer in Geography, Ph.D. in Silvoagricultural Sciences
+            </p>
+          </div>
+          <h3 className="text-center mt-8 mb-3 text-2xl font-alegreya-sans text-white">
+            WINKLER / PRECIPITATIONS
+          </h3>
           <WinklerPrecipitationChart />
+          <div className="text-white text-xs">
+            <p className="font-bold">Graphics created by:</p>
+            <p>
+              <span className="font-bold">Fernando Santibáñez</span>,
+              Agricultural Engineer, Ph.D. in Bioclimatology
+            </p>
+            <p>
+              <span className="font-bold">Paula Santibáñez</span>, Civil
+              Engineer in Geography, Ph.D. in Silvoagricultural Sciences
+            </p>
+          </div>
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5">
