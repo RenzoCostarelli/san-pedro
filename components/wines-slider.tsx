@@ -7,7 +7,6 @@ import type { Swiper as SwiperType } from "swiper/types";
 import "swiper/css";
 
 import { WineShowcaseProps } from "@/types/wines";
-import Link from "next/link";
 
 export default function WinesSlider({
   wineData,
@@ -20,8 +19,23 @@ export default function WinesSlider({
   );
   const swiperRef = useRef<SwiperType | null>(null);
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [iframeUrl, setIframeUrl] = useState("");
+
   const handleTabClick = (index: number) => {
     swiperRef.current?.slideTo(index);
+  };
+
+  const openModal = (url: string) => {
+    setIframeUrl(url);
+    setIsModalOpen(true);
+    document.body.style.overflow = "hidden"; // prevent scroll
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setIframeUrl("");
+    document.body.style.overflow = ""; // restore scroll
   };
 
   return (
@@ -64,7 +78,7 @@ export default function WinesSlider({
             <button
               key={tab.value}
               onClick={() => handleTabClick(index)}
-              className={`px-2 py-1.5 cursor-pointer flex-1 whitespace-nowrap  rounded transition-colors duration-300 ${
+              className={`px-2 py-1.5 cursor-pointer flex-1 whitespace-nowrap rounded transition-colors duration-300 ${
                 activeIndex === index
                   ? "bg-black text-white"
                   : "text-gold hover:text-white hover:bg-blue-dark"
@@ -84,7 +98,13 @@ export default function WinesSlider({
         >
           {wine.sliderImages.map((src, index) => (
             <SwiperSlide key={index}>
-              <Link href={wine.soilUrl[index]} target="_blank">
+              <button
+                onClick={() => openModal(wine.soilUrl[index])}
+                className="relative w-full"
+              >
+                <div className="absolute bg-blue px-4 py-1.5 top-1 right-1 text-xs font-alegreya-sans font-light">
+                  360° VIEW
+                </div>
                 <Image
                   src={src}
                   alt={`${wine.sliderTabs[index]?.label} image`}
@@ -93,11 +113,31 @@ export default function WinesSlider({
                   className="w-[534px] h-[400px] object-contain bg-yellow-50"
                   unoptimized
                 />
-              </Link>
+              </button>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black/80 z-[999] flex items-center justify-center p-4">
+          <div className="relative w-full max-w-[80vw] h-[90vh] bg-black rounded shadow-lg">
+            <button
+              onClick={closeModal}
+              className="absolute top-2 -right-10 text-black bg-white rounded-full p-2 leading-0 aspect-square text-xl cursor-pointer z-10"
+            >
+              ✕
+            </button>
+            <iframe
+              src={iframeUrl}
+              className="w-full h-full rounded"
+              frameBorder="0"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

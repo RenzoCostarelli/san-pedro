@@ -133,19 +133,21 @@ const InnovationItems: InnovationItemsProps[] = [
   {
     title: "COCCIOPESTO",
     image: cocciopestoImg,
+    text: "Clay with lime a quartz",
+    subtext: "(material used to build aqueducts in the Roman Empire)",
     items: [
       {
         label: "Quantity in the cellar:",
-        value: "6",
+        value: "3",
       },
       {
         label: "Capacity:",
-        value: "300 to 1600 liters",
+        value: "1800 liters",
       },
       {
         label: "Highlight:",
         value:
-          "more oxidative container max-w-[1100px], shorter aging, around 12 months.",
+          "brings tension, freshness, and length on the palate to the wines. Varieties used for aging: cabernet Sauvignon",
       },
       {
         label: "Varieties used for aging: ",
@@ -297,7 +299,7 @@ export default function WineMakingPage() {
         <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
             <span className="text-white">Cutting-edge</span>
-            Ageing Vessels
+            Fermentation Vessels
           </TitleSection>
           <div className="py-10">
             <InnovationIitemsList innovationItem={InnovationItems[7]} />

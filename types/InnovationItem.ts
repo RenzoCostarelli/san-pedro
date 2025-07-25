@@ -9,4 +9,6 @@ export interface InnovationItemsProps {
   title: string;
   image: StaticImageData;
   items: ItemProps[];
+  text?: string;
+  subtext?: string;
 }
