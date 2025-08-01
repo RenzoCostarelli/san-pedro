@@ -37,7 +37,7 @@ const regions = [
   "Yarra",
   "Marlborough",
   "Otago",
-  "Cachapoal",
+  "Cachapoal Andes",
 ];
 
 const winkler = [
@@ -62,10 +62,22 @@ export default function WinklerPrecipitationChart() {
       {
         label: "Winkler vs Precipitation",
         data: dataPoints,
-        pointBackgroundColor: "#C7B38C",
-        pointBorderColor: "#C7B38C",
-        pointRadius: 5,
-        pointHoverRadius: 6,
+        // pointBackgroundColor: "#C7B38C",
+        // pointBorderColor: "#C7B38C",
+        // pointRadius: 5,
+        // pointHoverRadius: 6,
+        pointHoverRadius: regions.map((region) =>
+          region === "Cachapoal Andes" ? 12 : 8
+        ),
+        pointRadius: regions.map((region) =>
+          region === "Cachapoal Andes" ? 10 : 6
+        ),
+        pointBackgroundColor: regions.map((region) =>
+          region === "Cachapoal Andes" ? "#ede3cf" : "#9f8462"
+        ),
+        pointBorderColor: regions.map((region) =>
+          region === "Cachapoal Andes" ? "#ede3cf" : "#9f8462"
+        ),
       },
     ],
   };

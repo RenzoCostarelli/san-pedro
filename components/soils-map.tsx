@@ -31,7 +31,7 @@ export default function SoilsMap() {
             {soilTypes.map((soil) => (
               <li
                 key={soil.id}
-                className="flex items-center gap-2 mb-4 cursor-pointer"
+                className="flex items-center gap-2 mb-2 cursor-pointer border border-gold p-2 rounded-sm hover:bg-gold transition-colors"
                 onClick={() => {
                   showDetailsDialog(soil.id);
                 }}
@@ -43,12 +43,12 @@ export default function SoilsMap() {
                 <div className="rounded-full">
                   <Image src={soil.icon} alt="" width={32} height={32} />
                 </div>
-                <span className="text-gold-light font-alegreya-sans font-light uppercase tracking-widest">
+                <span className="text-gold-light font-alegreya-sans whitespace-nowrap font-light uppercase tracking-widest">
                   {soil.title}
                 </span>
               </li>
             ))}
-            <li className="flex items-center gap-2 mb-4 cursor-pointer">
+            <li className="flex items-center gap-2 mb-4 cursor-pointer p-2 rounded-sm">
               <div className="rounded-full overflow-hidden">
                 {/* <Image src={soil.icon} alt="" width={32} height={32} /> */}
                 <div className="h-8 w-8 bg-white"></div>

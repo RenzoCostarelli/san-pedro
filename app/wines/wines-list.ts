@@ -47,11 +47,15 @@ export const winesList: WineShowcaseProps[] = [
     wineType: "100% Cabernet Sauvignon",
     wineBottleImage: caboBottle,
     wineLogoImage: caboLogo,
-    sliderImages: [block1],
+    sliderImages: [block1, block5],
     soilUrl: [
       "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=3",
+      "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=4",
     ],
-    sliderTabs: [{ label: "Balanced Coluvial", value: "balancedcoluvial" }],
+    sliderTabs: [
+      { label: "Balanced Coluvial", value: "balancedcoluvial" },
+      { label: "Balanced Fluvial", value: "balancedfluvial" },
+    ],
     defaultTab: "balancedcoluvial",
   },
   {

@@ -24,9 +24,9 @@ export default function InnovationIitemsList({
             </span>
           </DashedTitle>
           {innovationItem.text && innovationItem.subtext && (
-            <div className="font-alegreya italic">
-              <p>{innovationItem.text}</p>
-              <p>{innovationItem.subtext}</p>
+            <div className="font-alegreya italic text-white">
+              <p className="text-white">{innovationItem.text}</p>
+              <p className="text-white">{innovationItem.subtext}</p>
             </div>
           )}
           {innovationItem.items.map((item, index) => (
