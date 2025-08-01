@@ -12,6 +12,7 @@ import { Bar } from "react-chartjs-2";
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip);
 
 const regions = [
+  "Cachapoal Andes",
   "Maipo",
   "Apalta",
   "Lujan",
@@ -28,11 +29,10 @@ const regions = [
   "Yarra",
   "Marlborough",
   "Otago",
-  "Cachapoal",
 ];
 
 const chillHours = [
-  183, 131, 8, 1, 137, 0, 0, 0, 0, 0, 0, 1, 51, 0, 213, 901, 224,
+  224, 183, 131, 8, 1, 137, 0, 0, 0, 0, 0, 0, 1, 51, 0, 213, 901,
 ];
 
 export default function ChillHoursChart() {
@@ -42,7 +42,9 @@ export default function ChillHoursChart() {
       {
         label: "Chill Hours to Ripeness",
         data: chillHours,
-        backgroundColor: "#C7B38C",
+        backgroundColor: regions.map((region) =>
+          region === "Cachapoal Andes" ? "#ede3cf" : "#9f8462"
+        ),
       },
     ],
   };
@@ -86,7 +88,7 @@ export default function ChillHoursChart() {
         enabled: true,
       },
       datalabels: {
-        display: false, // 👈 esto desactiva las etiquetas
+        display: false,
       },
     },
   };

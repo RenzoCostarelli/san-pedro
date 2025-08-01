@@ -22,8 +22,8 @@ export default function SoilsPage() {
       <section className="bg-blue-dark py-15 md:px-0 px-5">
         <div className="container max-w-[1100px] mx-auto">
           <BorderedParagraph>
-            The ideal combination of alluvial and colluvial soils and the
-            diversity of basal rocks and cood drainage soils creates perfect
+            The ideal combination of fluvial and colluvial soils and the
+            diversity of basal rocks and good drainage soils creates perfect
             conditions for the finest wines of Viña San Pedro.
           </BorderedParagraph>
         </div>

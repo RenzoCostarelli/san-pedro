@@ -228,8 +228,19 @@ export default function WineMakingPage() {
       <section className="bg-blue py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
+            <span className="text-white">Cutting-edge </span>
+            fermentation vessels
+          </TitleSection>
+          <div className="py-10">
+            <InnovationIitemsList innovationItem={InnovationItems[7]} />
+          </div>
+        </div>
+      </section>
+      <section className="bg-blue-dark py-15 md:px-0 px-5 relative">
+        <div className="container max-w-[1100px] mx-auto">
+          <TitleSection>
             Cutting-edge
-            <span className="text-white"> Ageing Vessels</span>
+            <span className="text-white"> ageing vessels</span>
           </TitleSection>
 
           <div className="py-10">
@@ -237,7 +248,7 @@ export default function WineMakingPage() {
           </div>
         </div>
       </section>
-      <section className="bg-blue-dark py-15 md:px-0 px-5 relative">
+      <section className="bg-blue py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
           <div className="py-10">
             <InnovationIitemsList
@@ -247,14 +258,14 @@ export default function WineMakingPage() {
           </div>
         </div>
       </section>
-      <section className="bg-blue py-15 md:px-0 px-5 relative">
+      <section className="bg-blue-dark py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
           <div className="py-10">
             <InnovationIitemsList innovationItem={InnovationItems[2]} />
           </div>
         </div>
       </section>
-      <section className="bg-blue-dark py-15 md:px-0 px-5 relative">
+      <section className="bg-blue py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
           <div className="py-10">
             <InnovationIitemsList
@@ -264,7 +275,7 @@ export default function WineMakingPage() {
           </div>
         </div>
       </section>
-      <section className="bg-blue py-15 md:px-0 px-5 relative">
+      <section className="bg-blue-dark py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-3">
@@ -285,24 +296,13 @@ export default function WineMakingPage() {
           </div>
         </div>
       </section>
-      <section className="bg-blue-dark py-15 md:px-0 px-5 relative">
+      <section className="bg-blue py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
           <div className="py-10">
             <InnovationIitemsList
               innovationItem={InnovationItems[6]}
               direction="ltr"
             />
-          </div>
-        </div>
-      </section>
-      <section className="bg-blue py-15 md:px-0 px-5 relative">
-        <div className="container max-w-[1100px] mx-auto">
-          <TitleSection>
-            <span className="text-white">Cutting-edge</span>
-            Fermentation Vessels
-          </TitleSection>
-          <div className="py-10">
-            <InnovationIitemsList innovationItem={InnovationItems[7]} />
           </div>
         </div>
       </section>

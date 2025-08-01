@@ -16,6 +16,7 @@ import Image from "next/image";
 
 export default async function ClimatePage() {
   const data = await getWeatherData("22");
+  console.log("Weather Data:", data);
   return (
     <>
       <Hero image={heroImg}>
@@ -35,7 +36,7 @@ export default async function ClimatePage() {
                     <span className="border border-white p-1 rounded-full animate-pulse">
                       <div className="border bg-white rounded-full h-2 w-2"></div>
                     </span>
-                    <div className="italic tracking-wider">LIVE</div>
+                    <div className="italic tracking-wider text-white">LIVE</div>
                   </div>
                 </div>
                 <div className="columns-2 bg-gold py-3 px-5">
@@ -53,12 +54,12 @@ export default async function ClimatePage() {
                       <span className="font-bold">{data.humedad}</span>
                     </li>
                     <li>
-                      PRECIPITALITY:{" "}
+                      PRECIPITATION:{" "}
                       <span className="font-bold">{data.precipitacion}</span>
                     </li>
                   </ul>
                   <ul>
-                    <li>TEMP: </li>
+                    <li className="font-bold">TEMPERATURE</li>
                     <li>
                       MIN:{" "}
                       <span className="font-bold">
@@ -96,7 +97,7 @@ export default async function ClimatePage() {
             <div className="md:col-span-4 col-span-12 flex items-center justify-center">
               <ul className="text-2xl text-gold font-light font-alegreya-sans">
                 <li>450 - 300 MM RAINFALL PER YEAR</li>
-                <li>23,5° - 5,5° AVERAGE TEMPERATURE</li>
+                {/* <li>23,5° - 5,5° AVERAGE TEMPERATURE</li> */}
                 <li>25° - 23° THERMAL OSCILLATION</li>
               </ul>
             </div>
@@ -118,7 +119,7 @@ export default async function ClimatePage() {
                 The Winkler Index, is a method used to classify wine-growing
                 regions based on their climate, specifically the amount of heat
                 they accumulate during the growing season. It calculates the
-                total degree-days above 10°C (50°F) from April 1 to October 31,
+                total degree-days above 10°C (50°F) from October 1 to April 31,
                 as this is the temperature threshold for vine growth.
               </p>
             </div>
@@ -240,7 +241,7 @@ export default async function ClimatePage() {
           </h3>
           <ChillHoursChart />
           <div className="text-white text-xs">
-            <p className="font-bold">Graphics created by:</p>
+            <p className="font-bold">** Graphics created by:</p>
             <p>
               <span className="font-bold">Fernando Santibáñez</span>,
               Agricultural Engineer, Ph.D. in Bioclimatology
@@ -255,7 +256,7 @@ export default async function ClimatePage() {
           </h3>
           <WinklerPrecipitationChart />
           <div className="text-white text-xs">
-            <p className="font-bold">Graphics created by:</p>
+            <p className="font-bold">** Graphics created by:</p>
             <p>
               <span className="font-bold">Fernando Santibáñez</span>,
               Agricultural Engineer, Ph.D. in Bioclimatology
@@ -275,14 +276,14 @@ export default async function ClimatePage() {
           <div className="grid md:grid-cols-2 mt-15 gap-5 text-white">
             <div className="space-y-5">
               <p className="font-light tracking-wider font-sans leading-8">
-                The Winkler Index, is a method used to classify wine-growing
-                regions based on their climate, specifically the amount of heat
+                Certain terroirs are uniquely defined by minimal rainfall,
+                shaping the character and quality of their agricultural output.
               </p>
             </div>
             <div className="space-y-5">
               <p className="font-light tracking-wider leading-8 font-sans">
-                The index divides regions into five climate categories, ranging
-                from Region I (coolest) to Region V (hottest), helping vintners
+                Limited water availability forces plants to develop deep root
+                systems, intensifying the concentration of flavors in grapes.
               </p>
             </div>
           </div>

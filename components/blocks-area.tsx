@@ -72,7 +72,7 @@ export default function BlocksArea() {
             <li key={item}>
               <button
                 onClick={() => setSelected(item)}
-                className={`relative p-4 border border-gold rounded-2xl cursor-pointer text-gold-light uppercase whitespace-nowrap flex items-center gap-2 ${
+                className={`relative p-4 border hover:border-gold border-gold rounded-2xl cursor-pointer text-gold-light uppercase whitespace-nowrap flex items-center gap-2 ${
                   selected !== item ? "border-transparent" : ""
                 }`}
               >
@@ -89,12 +89,12 @@ export default function BlocksArea() {
         </ul>
       )}
       {type === "V" && (
-        <ul className="flex md:flex-col flex-wrap">
+        <ul className="flex md:flex-col flex-wrap gap-1">
           {items.map((item) => (
             <li key={item}>
               <button
                 onClick={() => setSelected(item)}
-                className={`px-3 py-1 border-1 border-gold transition-all rounded-full cursor-pointer text-gold-light uppercase whitespace-nowrap ${
+                className={`px-3 py-1 border-1 hover:border-gold border-gold transition-all rounded-full cursor-pointer text-gold-light uppercase whitespace-nowrap ${
                   selected !== item ? "border-transparent hover:text-white" : ""
                 }`}
               >
