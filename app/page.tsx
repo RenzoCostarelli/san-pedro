@@ -31,7 +31,7 @@ export default function Home() {
             unoptimized
             className="z-10"
           />
-          <p className="text-xl mt-8 text-gold-light">
+          <p className="text-xl mt-8 text-gold-light text-center">
             An exceptional terroir, at the foothills of the Andes,
             <br />
             shaped by millions of years of earthquakes and volcanic activity.
@@ -55,7 +55,7 @@ export default function Home() {
       <section className="bg-blue py-15 md:px-0 px-5">
         <div className="container max-w-[1100px] mx-auto">
           <TitleSection>
-            What makes it <span className="text-white">unique?</span>
+            What makes this terroir <span className="text-white">unique?</span>
           </TitleSection>
           <div className="grid md:grid-cols-2 mt-15 md:gap-10 gap-5">
             <div className="space-y-5">

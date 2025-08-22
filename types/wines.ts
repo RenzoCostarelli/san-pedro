@@ -11,6 +11,10 @@ export interface WineShowcaseProps {
   wineLogoImage: StaticImageData; // URL or static import path
   sliderImages: StaticImageData[]; // array of 3 image URLs for the slider
   soilUrl: string[];
+  ageing: string;
+  items?: string[];
+  yields: string;
+  lastTagline?: string;
   sliderTabs: {
     label: string;
     value: string;

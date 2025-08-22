@@ -251,10 +251,7 @@ export default function WineMakingPage() {
       <section className="bg-blue py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
           <div className="py-10">
-            <InnovationIitemsList
-              innovationItem={InnovationItems[1]}
-              direction="ltr"
-            />
+            <InnovationIitemsList innovationItem={InnovationItems[1]} />
           </div>
         </div>
       </section>
@@ -268,28 +265,17 @@ export default function WineMakingPage() {
       <section className="bg-blue py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
           <div className="py-10">
-            <InnovationIitemsList
-              innovationItem={InnovationItems[3]}
-              direction="ltr"
-            />
+            <InnovationIitemsList innovationItem={InnovationItems[3]} />
           </div>
         </div>
       </section>
       <section className="bg-blue-dark py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="gap-8">
             <div className="md:col-span-3">
               <InnovationIitemsList
                 sectionTitle="AMPHORAE"
                 innovationItem={InnovationItems[4]}
-                direction="ltr"
-                titleWhite
-              />
-            </div>
-            <div className="md:col-span-3 md:col-start-2 md:row-start-2">
-              <InnovationIitemsList
-                innovationItem={InnovationItems[5]}
-                direction="ltr"
                 titleWhite
               />
             </div>
@@ -298,11 +284,21 @@ export default function WineMakingPage() {
       </section>
       <section className="bg-blue py-15 md:px-0 px-5 relative">
         <div className="container max-w-[1100px] mx-auto">
+          <div className="gap-8">
+            <div className="md:col-span-3 md:row-start-2">
+              <InnovationIitemsList
+                sectionTitle="AMPHORAE"
+                innovationItem={InnovationItems[5]}
+                titleWhite
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-blue-dark py-15 md:px-0 px-5 relative">
+        <div className="container max-w-[1100px] mx-auto">
           <div className="py-10">
-            <InnovationIitemsList
-              innovationItem={InnovationItems[6]}
-              direction="ltr"
-            />
+            <InnovationIitemsList innovationItem={InnovationItems[6]} />
           </div>
         </div>
       </section>

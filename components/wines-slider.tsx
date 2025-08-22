@@ -60,10 +60,25 @@ export default function WinesSlider({
             unoptimized
           />
           <h3 className="text-gold uppercase mb-2">{wine.tagline}</h3>
-          <p className="text-white/90 text-sm mb-4 max-w-xl">
+          <p className="text-white/90 text-xs mb-4 max-w-xl">
             {wine.description}
           </p>
-          <p className="text-gray-400 text-xs">{wine.disclaimer}</p>
+          <p className="flex gap-1  text-xs mb-2">
+            <span className="font-bold">Ageing:</span> {wine.ageing}
+          </p>
+          <p className="flex flex-col gap-1 text-xs text-light mb-2">
+            {wine.items?.map((item, index) => (
+              <span key={index}>- {item}</span>
+            ))}
+          </p>
+          <p className="text-xs flex items-center gap-1 mb-1">
+            <span className="font-bold">Yield per Hectare:</span>
+            {wine.yields}
+          </p>
+          {wine.lastTagline && (
+            <h4 className="mb-4 text-xs">{wine.lastTagline}</h4>
+          )}
+          <p className="text-gray-400 text-xs ">{wine.disclaimer}</p>
           {wine.wineType && (
             <p className="text-gray-400 text-xs">{wine.wineType}</p>
           )}
@@ -102,8 +117,23 @@ export default function WinesSlider({
                 onClick={() => openModal(wine.soilUrl[index])}
                 className="relative w-full"
               >
-                <div className="absolute bg-blue px-4 py-1.5 top-1 right-1 text-xs font-alegreya-sans font-light">
-                  360° VIEW
+                <div className="absolute flex items-center gap-1 cursor-grab bg-blue px-4 py-1.5 top-1 right-1 text-xs font-alegreya-sans font-light">
+                  REAL VIEW{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="scale-80"
+                  >
+                    <path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z" />
+                    <circle cx="12" cy="13" r="3" />
+                  </svg>
                 </div>
                 <Image
                   src={src}

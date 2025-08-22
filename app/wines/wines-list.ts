@@ -30,6 +30,13 @@ export const winesList: WineShowcaseProps[] = [
       "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=4",
       "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=2",
     ],
+    ageing: "22 months",
+    items: [
+      "First 16 months: Aged in French oak barrels, foudres of varying sizes, and other vessels.",
+      "Final 6 months: After the final blend is assembled, the wine rests for 6 months in large European oak foudres.",
+    ],
+    yields: "5 - 8 tonnes/ha",
+    lastTagline: "Crafted from a combination of clonal and massal selections",
     sliderTabs: [
       { label: "Balanced Coluvial", value: "balancedcoluvial" },
       { label: "Fine Coluvial", value: "finecoluvial" },
@@ -48,6 +55,14 @@ export const winesList: WineShowcaseProps[] = [
     wineBottleImage: caboBottle,
     wineLogoImage: caboLogo,
     sliderImages: [block1, block5],
+    ageing: "22 months",
+    items: [
+      "First 16 months: Aged in French oak barrels and foudres.",
+      "Final 6 months: After the final blend is assembled, the wine rests for 6 months in French oak barrels.",
+    ],
+    yields: "6 tonnes/ha",
+    lastTagline:
+      "Crafted from a combination of Clone 169 and massal selection grapes.",
     soilUrl: [
       "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=3",
       "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=4",
@@ -68,6 +83,9 @@ export const winesList: WineShowcaseProps[] = [
       "Blend: Cabernet Sauvignon | Cabernet Franc | Carmenère | Syrah | Petit Verdot",
     wineBottleImage: sideralBottle,
     wineLogoImage: sideralLogo,
+    ageing:
+      "18 months in a mix of French oak barrels, foudres of varying sizes, amphorae, and other vessels.",
+    yields: "8-10 tonnes/ha",
     sliderImages: [block1, block3, block5, block10, block11, block09],
     soilUrl: [
       "https://www.ciudadesferica.com/demo/sanpedrocachapoal/?startscene=3",

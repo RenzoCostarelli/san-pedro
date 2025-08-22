@@ -8,7 +8,7 @@ import coverCropsImg from "@/public/images/sustainability/cover_crop.jpg";
 import irrigationImg from "@/public/images/sustainability/irrigation.jpg";
 import energieImg from "@/public/images/sustainability/renewable_energies.jpg";
 
-import sustainabilityImg from "@/public/images/sustainability-header.jpg";
+import sustainabilityImg from "@/public/images/sustainability/sustainability_header.jpg";
 
 const items = [
   {

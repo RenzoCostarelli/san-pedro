@@ -21,7 +21,7 @@ export default async function ClimatePage() {
     <>
       <Hero image={heroImg}>
         <div className="flex">
-          <div className="container max-w-[1100px] mx-auto relative z-50">
+          <div className="container max-w-[1100px] md:px-0 px-15 mx-auto relative z-50">
             <h1 className="font-alegreya-sans text-5xl md:text-6xl xl:text-8xl text-gold-light">
               Climate
             </h1>
@@ -43,37 +43,43 @@ export default async function ClimatePage() {
                   <ul className="text-white">
                     <li>
                       WIND SPEED:{" "}
-                      <span className="font-bold">{data.velocidadViento}</span>
+                      <span className="font-bold">
+                        {data.velocidadViento} km/h
+                      </span>
                     </li>
                     <li>
                       RADIATION:{" "}
-                      <span className="font-bold">{data.radiacion}</span>
+                      <span className="font-bold">
+                        {data.radiacion} MJ/m&sup2;
+                      </span>
                     </li>
                     <li>
                       HUMIDITY:{" "}
-                      <span className="font-bold">{data.humedad}</span>
+                      <span className="font-bold">{data.humedad} %</span>
                     </li>
                     <li>
                       PRECIPITATION:{" "}
-                      <span className="font-bold">{data.precipitacion}</span>
+                      <span className="font-bold">{data.precipitacion} mm</span>
                     </li>
                   </ul>
-                  <ul>
+                  <ul className="text-white">
                     <li className="font-bold">TEMPERATURE</li>
                     <li>
                       MIN:{" "}
                       <span className="font-bold">
-                        {data.temperaturaMinima}
+                        {data.temperaturaMinima} °C
                       </span>
                     </li>
                     <li>
                       MED:{" "}
-                      <span className="font-bold">{data.temperaturaMedia}</span>
+                      <span className="font-bold">
+                        {data.temperaturaMedia} °C
+                      </span>
                     </li>
                     <li>
                       MAX:{" "}
                       <span className="font-bold">
-                        {data.temperaturaMaxima}
+                        {data.temperaturaMaxima} °C
                       </span>
                     </li>
                   </ul>
@@ -85,7 +91,7 @@ export default async function ClimatePage() {
         </div>
       </Hero>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
-        <div className="container max-w-[1100px] mx-auto">
+        <div className="container max-w-[1100px] md:px-0 px-15 mx-auto">
           <div className="grid md:grid-cols-12 gap-5 ">
             <div className="md:col-span-8 col-span-12 ">
               <BorderedParagraph>
@@ -105,7 +111,7 @@ export default async function ClimatePage() {
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5">
-        <div className="container max-w-[1100px] mx-auto">
+        <div className="container px-0 max-w-[1100px] mx-auto">
           <span className="text-gold text-xl md:text-4xl font-light font-alegreya-sans">
             Winkler Classification and Cachapoal Andes:
           </span>
@@ -115,7 +121,7 @@ export default async function ClimatePage() {
           </TitleSection>
           <div className="grid grid-cols-1 md:grid-cols-2 mt-15 gap-5">
             <div className="space-y-5">
-              <p className="font-light tracking-wider font-sans leading-8 text-white">
+              <p className="font-light tracking-wider font-sans leading-8 text-white text-justify">
                 The Winkler Index, is a method used to classify wine-growing
                 regions based on their climate, specifically the amount of heat
                 they accumulate during the growing season. It calculates the
@@ -124,7 +130,7 @@ export default async function ClimatePage() {
               </p>
             </div>
             <div className="space-y-5">
-              <p className="font-light tracking-wider leading-8 font-sans text-white">
+              <p className="font-light tracking-wider leading-8 font-sans text-white text-justify">
                 The index divides regions into five climate categories, ranging
                 from Region I (coolest) to Region V (hottest), helping vintners
                 determine which grape varieties are best suited to a particular
@@ -136,11 +142,195 @@ export default async function ClimatePage() {
               </p>
             </div>
           </div>
-          <div className="md:h-96 mt-15 grid md:grid-cols-12 grid-cols-1 gap-5 relative">
+          <div className="md:h-96 mt-25 grid md:grid-cols-12 grid-cols-1 gap-5 relative">
             <div className="md:col-span-8 col-span-12 pl-10 relative">
               <div className="absolute h-full w-[20px] left-0 grid place-content-center">
                 <div className="bg-gold-medium text-white py-1 px-5 font-alegreya-sans -rotate-90">
                   WINKLER
+                </div>
+              </div>
+              <div className="flex items-center gap-4 font-alegreya italic">
+                <div className="grid grid-cols-2">
+                  <div className="relative scale-150">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="Layer_1"
+                      data-name="Layer 1"
+                      version="1.1"
+                      viewBox="0 0 1200 1200"
+                    >
+                      <path
+                        fill="#fff"
+                        strokeWidth="0px"
+                        d="M75.3,466.9c0,2.3,5.5,436.2,5.5,436.2l97.7,4.7,28.9,27.4,125.9,19.6,28.9,33.6,318.2,7.8,14.9-14.1,9.4-13.3,39.9-37.5,10.2-10.2,28.9-55.5,3.1-24.2,9.4-14.1,8.6-8.6,36.7-125.9,3.9-10.2,9.4-11.7,25.8-68,5.5-43.8,205.6-10.9,7-10.9-1.6-8.6,10.2-11,1.6-83.7-3.9-4.7-9.4-10.9-447.2-39.9-11-36,7.8-14.1,13.3-15.6,1.6-109.5s-59.4,3.1-64.1.8c-4.7-2.4-39.1,10.9-39.1,10.9l-12.5,13.3-30.5,37.5-19.5,12.5s-68.8,32.1-71.9,31.3c-3.1-.8-13.3,7.8-13.3,7.8l-14.1,13.3-84.4,34.4-19.5,18.8-80.5,29.7-18.8,18.8s-101.6,21.1-103.2,18c-1.6-3.1-13.3,16.4-13.3,16.4Z"
+                      />
+                      <g>
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="449.5"
+                          y="375.1"
+                          width="650.7"
+                          height="48.6"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="649.3"
+                          y="525.2"
+                          width="450.2"
+                          height="50.2"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="649.3"
+                          y="674.6"
+                          width="201.1"
+                          height="50.4"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="598.4"
+                          y="824.7"
+                          width="201.1"
+                          height="50.4"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="349.8"
+                          y="975.6"
+                          width="351.2"
+                          height="50.4"
+                        />
+                        <polygon
+                          fill="#000"
+                          strokeWidth="0px"
+                          points="850.4 823.3 800.9 823.4 800.7 678.5 850.2 678.4 850.4 823.3"
+                        />
+                        <polygon
+                          fill="#000"
+                          strokeWidth="0px"
+                          points="799.7 925.7 750.2 925.7 750 825.4 799.5 825.4 799.7 925.7"
+                        />
+                        <polygon
+                          fill="#000"
+                          strokeWidth="0px"
+                          points="900.4 674.8 850.2 674.8 850 533 900.2 532.9 900.4 674.8"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="1100.8"
+                          y="425"
+                          width="49.2"
+                          height="100.1"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="700.5"
+                          y="926.1"
+                          width="49.3"
+                          height="48.5"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="199.3"
+                          y="924.6"
+                          width="150.9"
+                          height="50"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="199.3"
+                          y="374.2"
+                          width="100.1"
+                          height="50"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="300.2"
+                          y="324.1"
+                          width="100.1"
+                          height="50"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="400.2"
+                          y="274.1"
+                          width="100.1"
+                          height="50"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="500.3"
+                          y="224.1"
+                          width="50.8"
+                          height="50"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="598.8"
+                          y="324.1"
+                          width="50.8"
+                          height="50"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="550.4"
+                          y="174"
+                          width="149.3"
+                          height="50"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="50"
+                          y="876.1"
+                          width="149.3"
+                          height="48.5"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="50"
+                          y="425.8"
+                          width="149.3"
+                          height="48.5"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="50"
+                          y="425.8"
+                          width="48.5"
+                          height="498.8"
+                        />
+                        <rect
+                          fill="#000"
+                          strokeWidth="0px"
+                          x="650.4"
+                          y="196.7"
+                          width="50"
+                          height="127.4"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div className="w-4 h-4 bg-gold rounded-xl"></div>
+                </div>
+                <div className="opacity-80">
+                  <span className="text-xl ">CLICK</span> to see more details
                 </div>
               </div>
               <WinklerRainDashboard />
@@ -198,14 +388,10 @@ export default async function ClimatePage() {
               </div>
             </div>
           </div>
-          {/* <div className="h-full w-full inset-0 bg-blue/80 backdrop-blur-md z-50">
-            <div className="">
-              <RainChart />
-            </div>
-          </div> */}
-          <div className="grid md:grid-cols-2 mt-15 gap-5">
+
+          <div className="grid md:grid-cols-2 mt-25 gap-5">
             <div className="space-y-5">
-              <p className="font-light tracking-wider font-sans leading-8 text-white">
+              <p className="font-light tracking-wider font-sans leading-8 text-white text-justify">
                 According to the Winkler region classification, the climate of
                 Cachapoal Andes is warm enough to fully ripen a wide variety of
                 grape varieties. Wines from a mildly warm region tend to have a
@@ -217,7 +403,7 @@ export default async function ClimatePage() {
               </p>
             </div>
             <div className="space-y-5">
-              <p className="font-light tracking-wider leading-8 font-sans text-white">
+              <p className="font-light tracking-wider leading-8 font-sans text-white text-justify">
                 Cachapoal Andes predominantly falls under the Winkler III region
                 classification, with the potential to occasionally reach Winkler
                 II in cooler years (upper limit). Being situated in the lower
@@ -231,56 +417,85 @@ export default async function ClimatePage() {
         </div>
       </section>
       <section className="bg-blue-dark py-15 md:px-0 px-5">
-        <div className="container max-w-[1100px] mx-auto">
+        <div className="container max-w-[1100px] md:px-0 px-15 mx-auto">
           <TitleSection>
             <span className="text-white">Cachapoal Andes</span> vs other D.O.
           </TitleSection>
           {/* <div className="h-96 bg-gray-400 mt-15"></div> */}
-          <h3 className="text-center mt-5 mb-3 text-2xl font-alegreya-sans text-white">
+          <h3 className="text-center mt-15 mb-3 text-2xl font-alegreya-sans text-white">
             CHILL HOURS TO RIPENESS
           </h3>
           <ChillHoursChart />
-          <div className="text-white text-xs">
-            <p className="font-bold">** Graphics created by:</p>
-            <p>
-              <span className="font-bold">Fernando Santibáñez</span>,
-              Agricultural Engineer, Ph.D. in Bioclimatology
-            </p>
-            <p>
+          <div className="text-gold text-xs mt-6">
+            <p className="font-bold">
+              ** Graphics created by: Fernando Santibáñez Agricultural Engineer,
+              Ph.D. in Bioclimatology.{" "}
               <span className="font-bold">Paula Santibáñez</span>, Civil
               Engineer in Geography, Ph.D. in Silvoagricultural Sciences
             </p>
           </div>
-          <h3 className="text-center mt-8 mb-3 text-2xl font-alegreya-sans text-white">
+          <div className="grid md:grid-cols-2 mt-5 gap-5">
+            <div className="space-y-5">
+              <p className="font-light tracking-wider font-sans leading-8 text-white text-justify">
+                Zones that experience 100 to 300 chilling hours generally
+                develop a more balanced and complex phenolic maturity, allowing
+                for the creation of wines with excellent cellaring potential. In
+                comparison to other regions recognized for their aptitude in
+                producing quality red varietals, Cachapoal Andes is
+                distinguished by a higher accumulation of cooling hours (below
+                10°C).
+              </p>
+            </div>
+            <div className="space-y-5">
+              <p className="font-light tracking-wider leading-8 font-sans text-white text-justify">
+                Consequently, it boasts a significant diurnal temperature
+                variation between day and night. This suggests that the terroir
+                itself enables a superior retention of natural acidity.
+              </p>
+            </div>
+          </div>
+          <h3 className="text-center mt-20 mb-3 text-2xl font-alegreya-sans text-white">
             WINKLER / PRECIPITATIONS
           </h3>
           <WinklerPrecipitationChart />
-          <div className="text-white text-xs">
-            <p className="font-bold">** Graphics created by:</p>
-            <p>
-              <span className="font-bold">Fernando Santibáñez</span>,
-              Agricultural Engineer, Ph.D. in Bioclimatology
-            </p>
-            <p>
+          <div className="text-gold text-xs mt-6">
+            <p className="font-bold">
+              ** Graphics created by: Fernando Santibáñez Agricultural Engineer,
+              Ph.D. in Bioclimatology.{" "}
               <span className="font-bold">Paula Santibáñez</span>, Civil
               Engineer in Geography, Ph.D. in Silvoagricultural Sciences
             </p>
+          </div>
+          <div className="grid md:grid-cols-2 mt-5 gap-5">
+            <div className="space-y-5">
+              <p className="font-light tracking-wider font-sans leading-8 text-white text-justify">
+                The zones exhibiting the optimal balance between average annual
+                precipitation and the Winkler index form a central cluster on
+                the graph.
+              </p>
+            </div>
+            <div className="space-y-5">
+              <p className="font-light tracking-wider leading-8 font-sans text-white text-justify">
+                These areas represent the broadest viticultural potential, with
+                Cachapoal-Andes positioned almost directly at this cluster`s
+                core.
+              </p>
+            </div>
           </div>
         </div>
       </section>
       <section className="bg-blue py-15 md:px-0 px-5">
-        <div className="container max-w-[1100px] mx-auto">
+        <div className="container max-w-[1100px] md:px-0 px-15 mx-auto">
           <TitleSection>
             Annual <span className="text-white">Rainfall</span>
           </TitleSection>
-          <div className="grid md:grid-cols-2 mt-15 gap-5 text-white">
-            <div className="space-y-5">
+          <div className="grid mt-15 gap-5 text-white">
+            <div>
               <p className="font-light tracking-wider font-sans leading-8">
                 Certain terroirs are uniquely defined by minimal rainfall,
                 shaping the character and quality of their agricultural output.
               </p>
-            </div>
-            <div className="space-y-5">
+
               <p className="font-light tracking-wider leading-8 font-sans">
                 Limited water availability forces plants to develop deep root
                 systems, intensifying the concentration of flavors in grapes.
@@ -291,11 +506,11 @@ export default async function ClimatePage() {
         </div>
       </section>
       <section className="py-15 md:px-0 px-5 bg-blue-dark">
-        <div className="container max-w-[1100px] mx-auto">
+        <div className="container max-w-[1100px] md:px-0 px-15 mx-auto">
           <TitleSection>Heliophany</TitleSection>
           <div className="grid grid-cols-1 mt-15 gap-5">
             <div className="space-y-5">
-              <p className="font-light tracking-wider font-sans leading-8 text-white">
+              <p className="font-light tracking-wider font-sans leading-8 text-white text-justify">
                 Heliophany refers to the duration and trajectory of sunlight
                 received over the course of the day. This visual representation
                 allows us to understand how solar exposure evolves from sunrise

@@ -2,7 +2,7 @@ import BorderedParagraph from "@/components/bordered-paragraph";
 import Hero from "@/components/hero";
 import WinesSlider from "@/components/wines-slider";
 
-import heroImg from "@/public/images/wines-header.jpg";
+import heroImg from "@/public/images/wines/hero_vinos.jpg";
 import { winesList } from "./wines-list";
 
 export default function WineMakingPage() {

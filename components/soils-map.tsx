@@ -194,9 +194,9 @@ export default function SoilsMap() {
             id="Layer_5"
             data-name="Layer 5"
             className={`relative transition-all cursor-pointer hover:opacity-100 ${
-              hoveredSoilId === "fluvial-matrix" ? "opacity-100" : "opacity-0"
+              hoveredSoilId === "balanced-fluvial" ? "opacity-100" : "opacity-0"
             }`}
-            onClick={() => showDetailsDialog("fluvial-matrix")}
+            onClick={() => showDetailsDialog("balanced-fluvial")}
           >
             <path
               className="cls-3"
@@ -231,9 +231,9 @@ export default function SoilsMap() {
             id="Layer_6"
             data-name="Layer 6"
             className={`relative transition-all cursor-pointer hover:opacity-100 ${
-              hoveredSoilId === "balanced-fluvial" ? "opacity-100" : "opacity-0"
+              hoveredSoilId === "fluvial-matrix" ? "opacity-100" : "opacity-0"
             }`}
-            onClick={() => showDetailsDialog("balanced-fluvial")}
+            onClick={() => showDetailsDialog("fluvial-matrix")}
           >
             <path
               className="cls-1"
