@@ -16,7 +16,7 @@ export default function Home() {
           style={{ zIndex: -1 }}
         >
           <source
-            src="https://res.cloudinary.com/dkgnaegp9/video/upload/v1753195654/output_buwuni.mp4"
+            src="https://res.cloudinary.com/dkgnaegp9/video/upload/v1756307241/sanpedro_cachapoal_web_og8b6j.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.

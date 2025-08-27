@@ -126,15 +126,15 @@ export default async function ClimatePage() {
                 regions based on their climate, specifically the amount of heat
                 they accumulate during the growing season. It calculates the
                 total degree-days above 10°C (50°F) from October 1 to April 31,
-                as this is the temperature threshold for vine growth.
+                as this is the temperature threshold for vine growth. The index
+                divides regions into five climate categories,
               </p>
             </div>
             <div className="space-y-5">
               <p className="font-light tracking-wider leading-8 font-sans text-white text-justify">
-                The index divides regions into five climate categories, ranging
-                from Region I (coolest) to Region V (hottest), helping vintners
-                determine which grape varieties are best suited to a particular
-                area.
+                ranging from Region I (coolest) to Region V (hottest), helping
+                vintners determine which grape varieties are best suited to a
+                particular area.
                 <br />
                 This tool is widely used in viticulture to understand the
                 relationship between climate and grape ripening, influencing
@@ -329,8 +329,8 @@ export default async function ClimatePage() {
                   </div>
                   <div className="w-4 h-4 bg-gold rounded-xl"></div>
                 </div>
-                <div className="opacity-80">
-                  <span className="text-xl ">CLICK</span> to see more details
+                <div className="opacity-80 text-white">
+                  <span className="text-xl">CLICK</span> to see more details
                 </div>
               </div>
               <WinklerRainDashboard />
@@ -342,7 +342,7 @@ export default async function ClimatePage() {
                   <div className="bg-gold text-white md:col-span-7 col-span-8 text-center py-2">
                     HARVEST SEASON
                   </div>
-                  <div className="bg-black col-span-4 md:col-span-5 col-end-13 col-start-9 text-center py-2">
+                  <div className="bg-black col-span-4 md:col-span-5 col-end-13 col-start-9 text-center py-2 text-white">
                     °C
                   </div>
                 </div>
@@ -441,16 +441,16 @@ export default async function ClimatePage() {
                 develop a more balanced and complex phenolic maturity, allowing
                 for the creation of wines with excellent cellaring potential. In
                 comparison to other regions recognized for their aptitude in
-                producing quality red varietals, Cachapoal Andes is
-                distinguished by a higher accumulation of cooling hours (below
-                10°C).
+                producing quality red varietals,
               </p>
             </div>
             <div className="space-y-5">
               <p className="font-light tracking-wider leading-8 font-sans text-white text-justify">
-                Consequently, it boasts a significant diurnal temperature
-                variation between day and night. This suggests that the terroir
-                itself enables a superior retention of natural acidity.
+                Cachapoal Andes is distinguished by a higher accumulation of
+                cooling hours (below 10°C). Consequently, it boasts a
+                significant diurnal temperature variation between day and night.
+                This suggests that the terroir itself enables a superior
+                retention of natural acidity.
               </p>
             </div>
           </div>
@@ -494,9 +494,6 @@ export default async function ClimatePage() {
               <p className="font-light tracking-wider font-sans leading-8">
                 Certain terroirs are uniquely defined by minimal rainfall,
                 shaping the character and quality of their agricultural output.
-              </p>
-
-              <p className="font-light tracking-wider leading-8 font-sans">
                 Limited water availability forces plants to develop deep root
                 systems, intensifying the concentration of flavors in grapes.
               </p>
