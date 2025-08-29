@@ -8,7 +8,6 @@ export default function SoilsImageDialog() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const dialogRef = useRef<HTMLDialogElement>(null);
 
-  // Handle opening and closing the dialog
   useEffect(() => {
     const dialogElement = dialogRef.current;
     if (!dialogElement) return;
@@ -20,7 +19,6 @@ export default function SoilsImageDialog() {
     }
   }, [isDialogOpen]);
 
-  // Handle dialog close event (including ESC key)
   useEffect(() => {
     const dialogElement = dialogRef.current;
     if (!dialogElement) return;
@@ -36,10 +34,7 @@ export default function SoilsImageDialog() {
     };
   }, []);
 
-  // Handle outside click (on the backdrop)
   const handleBackdropClick = (e: React.MouseEvent) => {
-    // If the click target is the dialog element itself (not its children),
-    // it means the user clicked on the backdrop
     if (e.target === dialogRef.current) {
       setIsDialogOpen(false);
     }

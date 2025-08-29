@@ -4,8 +4,6 @@ import { soilTypes } from "@/data/soilTypes";
 import { useState } from "react";
 import SoilDetailsDialog from "./soilDetailsDialog";
 import Image from "next/image";
-// import Image from "next/image";
-// import SoilsMapImage from "@/public/images/soils/mapa_tipos_suelos.png";
 
 export default function SoilsMap() {
   const [activeSoilId, setActiveSoilId] = useState<string | null>(null);

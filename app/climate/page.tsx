@@ -2,21 +2,15 @@ import BorderedParagraph from "@/components/bordered-paragraph";
 import ChillHoursChart from "@/components/ChillHoursChart";
 import HelioSlider from "@/components/helio-slider";
 import Hero from "@/components/hero";
-import { RainChart } from "@/components/rainChart2";
 import RainfallScatter from "@/components/ranfallScatter";
 import TitleSection from "@/components/title-section";
-// import WeatherData from "@/components/weather-data";
-import WinklerChart from "@/components/WinklerChart";
 import WinklerPrecipitationChart from "@/components/WinklerPrecipitationChart";
 import WinklerRainDashboard from "@/components/WinlkerRainDashboard";
 import { getWeatherData } from "@/lib/actions/wheater";
 import heroImg from "@/public/images/climate-header.jpg";
-import Image from "next/image";
-// import Image from "next/image";
 
 export default async function ClimatePage() {
   const data = await getWeatherData("22");
-  console.log("Weather Data:", data);
   return (
     <>
       <Hero image={heroImg}>

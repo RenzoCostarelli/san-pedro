@@ -1,9 +1,9 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { blocks } from "@/data/varietyBlocks";
+import { useRef } from "react";
 import { base64img } from "./base64img";
 import Tooltip from "./blocks-tooltip";
-import { blocks } from "@/data/varietyBlocks";
 
 interface Props {
   activeBlockIds: string[];
@@ -11,7 +11,6 @@ interface Props {
 export default function BlocksMap({ activeBlockIds }: Props) {
   const svgRef = useRef<SVGSVGElement | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [activeAreas, setActiveAreas] = useState<string[]>([]);
   return (
     <div ref={containerRef} className="relative mapwrapper">
       <svg
